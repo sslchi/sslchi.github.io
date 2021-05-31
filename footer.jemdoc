@@ -1,0 +1,10 @@
+# jemdoc: addcss{person.css}
+# jemdoc: nofooter
+~~~
+{}{raw}
+<div id="footer">
+<div id="footer-text">
+Copyright &copy; <a href="https://sslchi.github.io" target="blank">Guanjie</a>
+</div>
+</div>
+~~~
