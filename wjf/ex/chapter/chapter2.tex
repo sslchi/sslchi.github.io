@@ -1,0 +1,867 @@
+\chapter{极限与连续}
+
+\makepart{单项选择}
+
+
+\begin{problem}
+	设$x_{n} > 0$, 且$\lim\limits_{n \rightarrow \infty}x_{n}$存在, 则$\lim\limits_{n \rightarrow \infty}x_{n}$\pickin{B}.
+	\begin{abcd} 
+		\item $> 0$
+		
+		\item $\geq 0$
+		
+		\item $= 0$
+		
+		\item $< 0$
+		
+	\end{abcd} 
+	\kpoint{数列及其极限的定义}
+\end{problem} 
+
+\begin{problem}
+	极限$\displaystyle \lim\limits_{x \rightarrow 1}\e^{\frac{1}{x - 1}} =$\pickin{C}.
+	
+	\begin{abcd} 
+		\item $\infty$
+		
+		\item $1$
+		
+		\item 不存在
+		
+		\item $0$
+		
+	\end{abcd} 
+	
+	\kpoint{函数在固定点的极限和单侧极限}
+	
+\end{problem} 
+
+\begin{problem}
+	$\lim\limits_{x \rightarrow 0}(1 + x)^{- \frac{1}{x}} + \lim\limits_{x \rightarrow \infty}x\sin\frac{1}{x} =$\pickin{D}
+	
+	\begin{abcd} 
+		\item $\e$
+		
+		\item $\e^{-1}$
+		
+		\item $\e+1$
+		
+		\item $\e^{-1}+1$
+		
+	\end{abcd}
+	
+	\kpoint{重要极限Ⅱ及其应用}
+	
+\end{problem} 
+
+
+\begin{problem}
+	下列运算过程正确的是\pickin{C}
+	
+	\begin{abcd} 
+		\item
+		$\displaystyle \lim\limits_{n \rightarrow \infty}(\frac{1}{n} + \frac{1}{n + 1} + \cdots + \frac{1}{n + n}) = \lim\limits_{n \rightarrow \infty}\frac{1}{n} + \lim\limits_{n \rightarrow \infty}\frac{1}{n + 1} + \cdots + \lim\limits_{n \rightarrow \infty}\frac{1}{n + n} = 0 + 0 + \cdots + 0 = 0$
+		
+		\item
+		当$\displaystyle x \rightarrow 0$时, $\displaystyle \tan x\sim x$, $\sin x\sim x$, 故$\displaystyle \lim\limits_{x \rightarrow 0}\frac{\tan x - \sin x}{x^{3}} = \lim\limits_{x \rightarrow 0}\frac{x - x}{x^{3}} = 0$
+		
+		\item
+		当$\displaystyle x \rightarrow 0$时, $\displaystyle \tan x\sim x$, $\sin x\sim x$, 故$\displaystyle \lim\limits_{x \rightarrow 0}\frac{\sin 2x}{\sin 5x} = \lim\limits_{x \rightarrow 0}\frac{2x}{5x} = \frac{2}{5}$
+		
+		\item
+		当$x \rightarrow 0$时, $\tan x\sim x$, 故$\displaystyle \lim\limits_{x \rightarrow 0}\frac{\sqrt{1 + \tan x} - \sqrt{1 - \tan x}}{x} = \lim\limits_{x \rightarrow 0}\frac{\sqrt{1 + x} - \sqrt{1 - x}}{x} = \lim\limits_{x \rightarrow 0}\frac{2x}{(\sqrt{1 + x} + \sqrt{1 - x})x} = 1$
+		
+	\end{abcd}
+	
+	\kpoint{等价代换求极限}
+	
+\end{problem} 
+
+
+\begin{problem}
+	设$0 < a < b$, 则$\lim\limits_{n \rightarrow \infty}\sqrt[n]{a^{n} + b^{n}} =$\pickin{D}
+	
+	\begin{abcd} 
+		\item $1$
+		
+		\item $0$
+		
+		\item $a$
+		
+		\item $b$
+		\end{abcd}
+		
+		\kpoint{数列及其极限的定义}
+		
+	\end{problem} 
+
+\begin{problem}
+	设$f(x)$在$\left( - 1, \mspace{6mu} 0 \right) \cup \left( 0, \mspace{6mu} 1 \right)$定义.如果极限$\lim\limits_{x \rightarrow 0}f(x)$存在, 则下列结论正确的是\pickin{B}
+		
+		\begin{abcd} 
+			\item $f(x)$在$(- 1, 1)$有界;
+			
+			\item
+			存在正数$\delta$, $f(x)$在$\left( - \delta, 0 \right) \cup \left( 0, \delta \right)$有界;
+			
+			\item $f(x)$在$\left( - 1, 0 \right) \cup \left( 0, 1 \right)$有界;
+			
+			\item 存在正数$\delta$, $f(x)$在$\left( - \delta, \delta \right)$有界.
+			
+		\end{abcd}
+		
+		\kpoint{极限的有界性和局部有界性}
+		
+	\end{problem} 
+
+
+\begin{problem}
+	已知$\displaystyle \lim\limits_{x \rightarrow 0}\frac{f(x)}{x} = 2$, 则$\displaystyle \lim\limits_{x \rightarrow 0}\frac{\sin 2x}{f(3x)} =$\pickin{C}
+		
+		\begin{abcd} 
+			\item $\displaystyle \frac{2}{3}$
+			
+			\item $\displaystyle \frac{3}{2}$
+			
+			\item $\displaystyle \frac{1}{3}$
+			
+			\item $\displaystyle \frac{4}{3}$
+			
+		\end{abcd}
+		
+		\kpoint{重要极限Ⅰ及其应用}
+		
+	\end{problem} \begin{problem}
+	若$\lim\limits_{x \rightarrow x_{0}}f(x)$存在, $\lim\limits_{x \rightarrow x_{0}}g(x)$不存在, 则\pickin{D}.
+		
+		\begin{abcd} 
+			\item
+			$\displaystyle \lim\limits_{x \rightarrow x_{0}}\lbrack f(x) \cdot g(x)\rbrack$及$\displaystyle \lim\limits_{x \rightarrow x_{0}}\frac{g(x)}{f(x)}$一定都不存在;
+			
+			\item
+			$\displaystyle \lim\limits_{x \rightarrow x_{0}}\lbrack f(x) \cdot g(x)\rbrack$及$\displaystyle \lim\limits_{x \rightarrow x_{0}}\frac{g(x)}{f(x)}$一定都存在;
+			
+			\item
+			$\displaystyle \lim\limits_{x \rightarrow x_{0}}\lbrack f(x) \cdot g(x)\rbrack$及$\displaystyle \lim\limits_{x \rightarrow x_{0}}\frac{g(x)}{f(x)}$恰有一个存在, 而另一个不存在;
+			
+			\item
+			$\displaystyle \lim\limits_{x \rightarrow x_{0}}\lbrack f(x) \cdot g(x)\rbrack$及$\displaystyle \lim\limits_{x \rightarrow x_{0}}\frac{g(x)}{f(x)}$都不一定存在.
+			
+		\end{abcd}
+		
+		\kpoint{极限的四则运算法则及有理分式的极限}
+		
+	\end{problem} 
+
+\begin{problem}
+		当$x \rightarrow 0$时, 下列四个无穷小量中, 哪一个是比另三个更高阶的无穷小量\pickin{D}.
+		
+		\begin{abcd} 
+			\item $x^{2}$
+			
+			\item $1 - \cos x$
+			
+			\item $\sqrt{1 - x^{2}} - 1$
+			
+			\item $x - \tan x$
+			\end{abcd}
+			
+			\kpoint{无穷小量阶的比较}
+			
+		\end{problem} 
+	
+	
+	\begin{problem}
+		当$x \rightarrow 0$时, $1 - \cos 2x$与$x^{2}$相比是\pickin{B}.
+			
+			\begin{abcd} 
+				\item 高阶无穷小量
+				
+				\item 同阶但不等价的无穷小量
+				
+				\item 低阶无穷小量
+				
+				\item 等价无穷小量
+				
+			\end{abcd}
+			
+			\kpoint{无穷小量阶的比较}
+			
+		\end{problem} 
+	
+	\begin{problem}
+		当$x \rightarrow 0$时, $\displaystyle \frac{1}{x^{2}}\sin\frac{1}{x}$是\pickin{D}
+			
+			\begin{abcd} 
+				\item 无穷小量
+				
+				\item 无穷大量
+				
+				\item 有界量非无穷小量
+				
+				\item 无界但非无穷大量
+				
+			\end{abcd}
+			\kpoint{无穷小量与无穷大量的概念}
+			\end{problem} 
+		
+		
+		
+		
+		\begin{problem}
+			当$x \rightarrow 0$时, 下列函数中比$x$高阶的无穷小量是\pickin{B}.
+				
+				\begin{abcd} 
+					\item $x + \sin x$ 
+					\item $x - \sin x$
+					
+					\item $\ln\left( 1 + x \right)$
+					
+					\item $\ln\left( 1 - x \right)$
+					
+				\end{abcd}
+				
+				\kpoint{无穷小量阶的比较}
+				
+			\end{problem} 
+		
+		\begin{problem}
+			设在某个极限过程中函数$f\left( x \right)$与$g\left( x \right)$均是无穷大量, 则下列函数中哪一个也必是无穷大量\pickin{C}.
+				
+				\begin{abcd} 
+					\item $f\left( x \right) + g\left( x \right)$ 
+					\item $f\left( x \right) - g\left( x \right)$
+					
+					\item $f\left( x \right) \cdot g\left( x \right)$
+					
+					\item $\displaystyle \frac{f\left( x \right)}{g\left( x \right)}$
+					
+				\end{abcd}
+				
+				\kpoint{无穷小量与无穷大量的概念}
+				
+			\end{problem} 
+		
+		\begin{problem}
+			$x \rightarrow 0$时, $1 - \cos 3x$是$x^{2}$的\pickin{B}.
+				
+				\begin{abcd} 
+					\item 高阶无穷小
+					
+					\item 同阶无穷小, 但不等价
+					
+					\item 等价无穷小
+					
+					\item 低阶无穷小
+					
+				\end{abcd} 
+				
+				\kpoint{无穷小量阶的比较}
+				
+			\end{problem} 
+		
+		\begin{problem}
+			$x = 1$是$f(x) =  \displaystyle \begin{cases}
+				\frac{x^{2} - 1}{x - 1}\e^{\frac{1}{x - 1}} & x \neq 1 \\
+				0 & x = 1 \\
+				\end{cases} $的\pickin{D}
+				
+				\begin{abcd} 
+					\item 连续点
+					
+					\item 跳跃间断点
+					
+					\item 可去间断点
+					
+					\item 无穷间断点
+					
+				\end{abcd} 
+				
+				\kpoint{间断点分类及举例}
+				
+			\end{problem} 
+		
+		\begin{problem}
+			$\displaystyle y = \frac{\sqrt{x - 3}}{\left( x + 1 \right)\left( x + 2 \right)}$的连续区间是\pickin{B}
+				
+				\begin{abcd} 
+					\item $( - \infty, - 2) \cup ( - 2, - 1) \cup ( - 1, + \infty)$
+					
+					\item $\lbrack 3, + \infty)$
+					
+					\item $( - \infty, - 2) \cup ( - 2, + \infty)$
+					
+					\item $( - \infty, - 1) \cup ( - 1, + \infty)$
+					
+				\end{abcd} 
+				
+				\kpoint{连续的定义及其等价形式}
+				
+			\end{problem} 
+		
+		\begin{problem}
+			设$f(x) =\displaystyle   \begin{cases}
+				 \dfrac{\sin x}{x - x^{2}}, & x \neq 0 \\
+				 0, & x = 0 \\
+				\end{cases} $, 则$f(x)$的间断点个数为\pickin{C}.
+				
+				\begin{abcd} 
+					\item $0$
+					
+					\item $1$
+					
+					\item $2$
+					
+					\item $3$
+					
+				\end{abcd}
+				
+				\kpoint{间断点分类及举例}
+				
+			\end{problem} 
+		
+		\begin{problem}
+			设$f\left( x \right) =  \begin{cases}\dfrac{\sin 3x}{x}, & x \neq 0 \\
+				k, & x = 0 \\
+				\end{cases}  $为连续函数, 则$k =$\pickin{B}
+				
+				\begin{abcd} 
+					\item $1$
+					
+					\item $- 3$
+					
+					\item $0$
+					
+					\item $3$
+					
+				\end{abcd}
+				
+				\kpoint{连续的定义及其等价形式}
+				
+			\end{problem} 
+		
+		\begin{problem}
+			函数$f\left( x \right) = \begin{cases}
+				x & x \leq 0 \\
+				\e^{\frac{1}{x}} & x > 0 \\
+				\end{cases}$在点$x = 0$处是否连续？\pickin{C}
+				
+				\begin{abcd} 
+					\item 连续
+					
+					\item 不连续, 因为无定义
+					
+					\item 不连续, 因为极限不存在
+					
+					\item 前面都不对
+					
+				\end{abcd}
+				
+				\kpoint{连续的定义及其等价形式}
+				
+			\end{problem} 
+			
+			\begin{problem}
+				要使$\displaystyle f(x) = (1 + x^{2})^{- \frac{2}{x^{2}}}$在$x = 0$处连续, 应补充定义$f(0)$的值为\pickin{B}.
+				
+				\begin{abcd} 
+					\item $0$ 
+					
+					\item $\e^{- 2}$
+					
+					\item $\e^{- 4}$
+					
+					\item $\e^{- 1}$
+					
+				\end{abcd}
+				
+				\kpoint{重要极限Ⅱ及其应用}
+			\end{problem}
+		
+		
+		
+
+\makepart{填空题}
+
+
+\begin{problem}
+	设$\displaystyle \lim\limits_{x \rightarrow \infty}\frac{(x - 1)(x - 2)(x - 3)(x - 4)}{(4x - 1)^{\alpha}} = \beta$, 则$\alpha, \beta$的值是\fillin{$\displaystyle \alpha = 4, \beta = \frac{1}{4^{4}}$}.
+	
+	\kpoint{函数在无穷远处的极限}
+\end{problem}
+
+\begin{problem}
+	若$a > 0$, $b > 0$均为常数, 则$\displaystyle \lim\limits_{x \rightarrow 0}\left( \frac{a^{x} + b^{x}}{2} \right)^{\frac{3}{x}} =$
+	\fillin{$\displaystyle (ab)^{\frac{3}{2}}$}
+	
+	\kpoint{函数在固定点的极限与单侧极限}
+	
+\end{problem}           
+
+\begin{problem}
+	$\displaystyle \lim\limits_{x \rightarrow 1}(1 - x)\tan\frac{\pi x}{2} =$
+	\fillin{$\dfrac{2}{\pi}$}
+	
+	\kpoint{函数在固定点的极限与单侧极限}
+	
+\end{problem}           
+
+
+\begin{problem}
+	设$P(x)$是$x$的多项式, 且$\displaystyle \lim\limits_{x \rightarrow \infty}\frac{P(x) - 6x^{3}}{x^{2}} = 2$, $\displaystyle \lim\limits_{x \rightarrow 0}\frac{P(x)}{x} = 3$, 则$P(x) =$
+	\fillin{ $6x^{3} + 2x^{2} + 3x$}.
+	
+	\kpoint{函数在固定点的极限与单侧极限}
+	
+\end{problem}           
+
+\begin{problem}
+	$\displaystyle \lim\limits_{x \rightarrow \infty}\left( 1 - \frac{2}{x} \right)^{\frac{x}{3}} =$\fillin{$\displaystyle \e^{- \frac{2}{3}}$}.
+	
+	\kpoint{重要极限Ⅱ及其应用}
+		
+	\end{problem}          
+
+ \begin{problem}
+ 	设$\displaystyle \lim\limits_{x \rightarrow 1}\frac{x^{3} - ax - x + 4}{x - 1} = A$, 则有$a =$\fillin{4}, $A =$ \fillin{-2}.
+		
+		\kpoint{重要极限Ⅰ及其应用}
+			
+\end{problem}
+\begin{problem}
+设$\displaystyle f(x) = x\sin\frac{2}{x} + \frac{\sin x}{x}$, 则$\lim\limits_{x \rightarrow \infty}f(x) =$
+			\fillin{2}.
+			
+			\kpoint{重要极限Ⅰ及其应用}
+	\end{problem}           
+		
+\begin{problem}
+	$\displaystyle \lim\limits_{x \rightarrow 0}\frac{x^{2} + \sin^{3}x \cdot \sin\frac{1}{x}}{3x^{2}} =$\fillin{$\displaystyle \frac{1}{3}$}.
+		
+\kpoint{重要极限Ⅰ及其应用}
+\end{problem}           
+
+\begin{problem}
+	$\displaystyle \lim\limits_{n \rightarrow \infty}(\frac{1}{1 \cdot 3} + \frac{1}{3 \cdot 5} + \cdots + \frac{1}{(2n - 1)(2n + 1)}) =$\fillin{$\displaystyle \frac{1}{2}$}.
+				
+\kpoint{极限的四则运算法则及有理分式的极限}
+\end{problem}          
+
+
+ \begin{problem}$\lim\limits_{x \rightarrow + \infty}(\arcsin(\sqrt{x^{2} + x} - x)) =$
+\fillin{$\displaystyle \frac{\pi}{6}$}.
+				
+\kpoint{函数在无穷远处的极限}
+					
+\end{problem}
+
+\begin{problem}
+$\displaystyle \lim\limits_{x \rightarrow \infty}x\sin\frac{2x}{1 + x^{2}} =$\fillin{$2$}.
+					
+\kpoint{等价代换求极限}
+					
+\end{problem}           
+
+\begin{problem}
+	当$x \rightarrow 0$时, $2x^{2} + 3x^{\frac{5}{2}}$是关于$x$的
+	\fillin{高或$2$} 阶无穷小.
+		
+\kpoint{无穷小量阶的比较}
+\end{problem}           
+
+\begin{problem}
+	当$x \rightarrow 0$时, $\sqrt{1 - 3x} = 1 + ax + bx^{2} + o(x^{2})$, 则$a$和$b$的值分别为\fillin{$\displaystyle a = - \frac{3}{2}, b = - \frac{9}{8}$}.
+					
+\kpoint{无穷小量的运算性质}
+\end{problem}           
+
+\begin{problem}
+	当$x \rightarrow 0$时, $2\sin x - \sin 2x$与$x^{k}$是等价无穷小量, 则$k =$\fillin{3}.
+					
+\kpoint{无穷小量的运算性质}
+\end{problem}           
+			
+\begin{problem}
+	函数$\displaystyle y = \frac{\sqrt{1 + x}}{(x - 1)(x + 2)}$的间断点是\fillin{$x = 1$}.
+	
+\kpoint{间断点分类及举例}
+\end{problem}           
+
+\begin{problem}
+设函数$y =  \begin{cases}
+					(1 - x)^{\frac{3}{x}} & x \neq 0 \\
+					K & x = 0 \\
+					\end{cases}  $在$x = 0$处连续, 则参数$K =$\fillin{$\e^{- 3}$}.
+					
+\kpoint{连续的必要条件与单侧连续}					
+\end{problem}           
+
+\begin{problem}
+	函数$f(x) =  \begin{cases}
+	x + a & x \leq 0 \\
+	\e^{x} + 1 & x > 0 \\
+	\end{cases} $在点$x = 0$处连续, 则$a =$\fillin{$2$}
+	
+\kpoint{连续的必要条件与单侧连续}
+	
+\end{problem}           
+
+\begin{problem}
+	设函数$\displaystyle f(x) =  \begin{cases}
+	\dfrac{2\sin 2x}{x} & x < 0 \\
+	a & x = 0 \\
+	\dfrac{\ln(1 + 4x)}{x} & x > 0 \\
+	\end{cases}$在$x = 0$处间断, 则$a$
+	\fillin{$\neq 4$}.
+	
+\kpoint{连续的必要条件与单侧连续}
+\end{problem}          
+%
+ \begin{problem}
+ 	函数$\displaystyle f\left( x \right) = \frac{\sqrt{x^{2} - 4}}{x - 2}$的连续区间是\fillin{ $( - \infty, - 2\rbrack, \mspace{6mu}(2, + \infty)$}.
+					
+\kpoint{连续的必要条件与单侧连续}
+\end{problem}           
+
+\begin{problem}
+	$x = 1$是函数$\displaystyle f(x) = \arctan\frac{1}{1 - x}$的\fillin{跳跃间断点}.
+						
+\kpoint{间断点分类及举例}
+\end{problem}
+
+
+\makepart{计算题}
+
+\begin{problem}
+求极限$\lim\limits_{x \rightarrow \frac{\pi}{2}}(1 + \cos x)^{\tan x}$.
+
+\begin{solution} $\displaystyle \lim\limits_{x \rightarrow \frac{\pi}{2}}(1 + \cos x)^{\tan x} = \displaystyle \lim\limits_{x \rightarrow \frac{\pi}{2}}(1 + \cos x)^{\frac{1}{\cos x} \cdot \sin x} = \e.$
+\end{solution}
+
+\kpoint{重要极限Ⅱ及其应用}
+\end{problem}
+
+\begin{problem} 
+	$\displaystyle \lim\limits_{x \rightarrow \infty}\left( \frac{x - 1}{x + 3} \right)^{x + 2}$
+
+\begin{solution}
+	$\e^{- 4}$
+\end{solution}
+
+\kpoint{函数在无穷远处的极限}
+
+\end{problem}           
+
+\begin{problem} 
+	$\displaystyle \lim\limits_{x \rightarrow 0}\frac{\tan x - \sin x}{x^{3}}$
+	
+\begin{solution} 
+	$\displaystyle \frac{1}{2}$
+\end{solution}
+\kpoint{重要极限Ⅰ及其应用}
+\end{problem}          
+ 
+ \begin{problem}
+ 	$\displaystyle \lim\limits_{x \rightarrow + \infty}(\sqrt{x^{2} + 2x + 2} - \sqrt{x^{2} - 2x + 2})$
+
+\begin{solution}
+原式 $\displaystyle {= \lim\limits_{x \rightarrow + \infty}\frac{4x}{\sqrt{x^{2} + 2x + 2} + \sqrt{x^{2} - 2x + 2}}
+}{= \lim\limits_{x \rightarrow + \infty}\frac{4}{\sqrt{1 + \frac{2}{x} + \frac{2}{x^{2}}} + \sqrt{1 - \frac{2}{x} + \frac{2}{x^{2}}}}
+}{= 2}$
+\end{solution}
+
+\kpoint{极限的四则运算法则及有理分式的极限}
+
+\end{problem}           
+
+\begin{problem}
+$\lim\limits_{x \rightarrow \infty}\left( \arctan x \cdot \arcsin\frac{1}{x} \right)$
+
+\begin{solution} 
+$0$
+\end{solution}
+
+\kpoint{极限的四则运算法则及有理分式的极限}
+
+\end{problem}           
+
+
+\begin{problem}
+	$\displaystyle x_{n} = \frac{1}{3} + \frac{1}{15} + \cdots + \frac{1}{4n^{2} - 1}$, 求$\lim\limits_{n \rightarrow \infty}x_{n}$.
+
+\begin{solution}
+$\displaystyle \because x_{n}=\frac{1}{2}\left(1-\frac{1}{3}+\frac{1}{3}-\frac{1}{5}+\cdots+\frac{1}{2 n-1}-\frac{1}{2 n+1}\right)=\frac{1}{2}\left(1-\frac{1}{2 n+1}\right), \ $
+$\displaystyle \therefore \lim _{n \rightarrow \infty} x_{n}=\frac{1}{2}.$
+\end{solution}
+
+\kpoint{极限的四则运算法则及有理分式的极限}
+
+\end{problem}           
+
+\begin{problem}
+	$\displaystyle \lim\limits_{n \rightarrow \infty}(\frac{n}{n^{2} + 1} + \frac{n}{n^{2} + 2} + \cdots + \frac{n}{n^{2} + n})$
+
+\begin{solution} 
+	记$\displaystyle x_{n} = \frac{n}{n^{2} + 1} + \frac{n}{n^{2} + 2} + \cdots + \frac{n}{n^{2} + n}$, 因为
+	$$\frac{n}{n^{2} + n} + \frac{n}{n^{2} + n} + \cdots + \frac{n}{n^{2} + n} \leq x_{n} \leq \frac{n}{n^{2}} + \frac{n}{n^{2}} + \cdots + \frac{n}{n^{2}}, $$
+即$$\frac{n}{n + 1} \leq x_{n} \leq 1$$
+由于$$\lim\limits_{n \rightarrow \infty}\frac{n}{n + 1} = 1, $$ 所以由夹逼定理, 得$\lim\limits_{n \rightarrow \infty}x_{n} = 1$
+\end{solution}
+\kpoint{夹逼准则}
+
+\end{problem}           
+
+\begin{problem}
+	若$x_{1} = a > 0$, $y_{1} = b > 0\left( a < b \right)$, $x_{n + 1} = \sqrt{x_{n}y_{n}}$, $\displaystyle y_{n + 1} = \frac{x_{n} + y_{n}}{2}$, 求$\lim\limits_{n \rightarrow \infty}(x_{n} - y_{n})$
+
+\begin{solution} 
+	由不等式$\displaystyle \sqrt{x \cdot y} \leq \frac{x + y}{2}$, 知$\displaystyle x_{n} \leq y_{n}\mspace{6mu}\left( n = 1, 2, 3, \cdots \right)$
+于是, $$x_{n + 1} = \sqrt{x_{n}y_{n}} \geq \sqrt{x_{n} \cdot x_{n}} = x_{n}, \ y_{n + 1} = \frac{x_{n} + y_{n}}{2} \leq \frac{y_{n} + y_{n}}{2} = y_{n},$$
+
+即, $\{ x_{n}\}$为递增数列, $\{ y_{n}\}$为递减数列, 
+又$a = x_{1} \leq x_{n} \leq y_{n} \leq y_{1} = b$, 则$\{ x_{n}\}$与$\{ y_{n}\}$均为有界数列.
+故它们均存在极限.记$\lim\limits_{n \rightarrow \infty}x_{n} = \alpha$, $\lim\limits_{n \rightarrow \infty}y_{n} = \beta$, 对$\displaystyle y_{n + 1} = \frac{x_{n} + y_{n}}{2}$的两边取极限, 得$\alpha = \beta$, 因此$\lim\limits_{n \rightarrow \infty}(x_{n} - y_{n}) = 0$.
+\end{solution}
+
+\kpoint{单调有界准则}
+
+\end{problem}           
+
+\begin{problem}
+	已知$\lim\limits_{x \rightarrow \infty}f(x)$存在, 且$\displaystyle f(x) = x^{2}(e^{- \frac{1}{x^{2}}} - 1) + \frac{2x^{2}}{\sqrt{1 + x^{4}}} \cdot \lim\limits_{x \rightarrow \infty}f(x)$, 求$\lim\limits_{x \rightarrow \infty}f(x)$
+
+\begin{solution} 
+	$1$.
+\end{solution}
+
+\kpoint{函数在无穷远处的极限}
+
+\end{problem}           
+
+\begin{problem}
+	设$f(x) =  \begin{cases} 
+\left( \dfrac{1 - x}{1 + x} \right)^{\frac{1}{x}}\quad\quad x > 0 \\
+a\quad\quad\quad\quad\mspace{6mu}\mspace{6mu}\mspace{6mu} x = 0 \\
+\dfrac{\sin kx}{x}\quad\quad\quad x < 0 \\
+\end{cases} $（其中$k \neq 0$）, 
+
+（1）求$f(x)$在点$x = 0$的左、右极限；
+
+（2）当$a$和$k$取何值时，$f(x)$在点$x = 0$连续？
+
+\begin{solution} 
+	（1）$\e^{- 2}, k$（2）$a = k = \e^{- 2}$.
+\end{solution}
+
+\kpoint{连续的必要条件与单侧连续}
+
+\end{problem}
+
+
+\makepart{综合与应用题}
+
+\begin{problem}讨论极限$\displaystyle \lim_{x \rightarrow 0}\frac{|\sin x|}{x}$.
+	
+	\begin{solution}
+		因为$\displaystyle \lim_{x \rightarrow 0^{+}}\frac{|\sin x|}{x} = 1$，$\displaystyle \lim_{x \rightarrow 0^{-}}\frac{|\sin x|}{x} = - 1$，故原极限不存在.
+		
+	\end{solution}
+
+\kpoint{函数在固定点的极限与单侧极限}
+\end{problem}           
+
+
+\begin{problem}若$\displaystyle \lim_{x \rightarrow x_{0}}g(x) = 0$,且在$x_{0}$的某去心邻域内$g(x) \neq 0,\ \displaystyle \lim_{x \rightarrow x_{0}}\frac{f(x)}{g(x)} = A$, 则$\displaystyle \lim_{x \rightarrow x_{0}}f(x)$必等于$0$,为什么？
+	
+	\begin{solution} 
+		因 $\displaystyle \lim_{x \rightarrow x_{0}}f(x) = \lim_{x \rightarrow x_{0}}\frac{f(x)}{g(x)} \cdot g(x) = A \cdot 0 = 0$
+		
+	\end{solution}
+\kpoint{极限的四则运算法则及有理分式的极限}
+\end{problem}           
+
+
+\begin{problem}设$f(x) = \dfrac{x}{\tan\frac{x}{2}}$,问:当$x$趋于何值时,$f(x)$为无穷小.
+	
+	\begin{solution}
+		当$x_{k}=(2 k-1) \pi (k \in Z) $时，
+		$\displaystyle  \lim _{x \rightarrow x_{k}} \frac{x}{\tan \frac{x}{2}}=0 $. 故当$x \rightarrow x_{k}$时, $f(x)$为无穷小.
+		
+	\end{solution}
+
+\kpoint{无穷小量与无穷大量的概念}
+
+\end{problem}           
+
+
+\begin{problem}确定$f(x) = \dfrac{\sin\pi x}{x(x - 1)}$的间断点,并判定其类型.
+	
+	\begin{solution} $x = 0$ 及 $x = 1$ 是可去间断点
+		
+	\end{solution}\kpoint{间断点分类与举例}
+
+\end{problem}           
+
+
+\begin{problem}求$y = \dfrac{x^{2} - 1}{x^{2} - 3x + 2}$的间断点,并判别间断点的类型.
+	
+	\begin{solution} 因为$x^{2} - 3x + 2 = (x - 1)(x - 2)$, 而 $$\displaystyle \lim_{x \rightarrow 1}\frac{x^{2} - 1}{x^{2} - 3x + 2} = - 2,\ \lim_{x \rightarrow 2}\frac{x^{2} - 1}{x^{2} - 3x + 2} = \infty.$$
+因此有间断点：$x = 1$为可去间断点,$x = 2$为无穷间断点.
+		
+	\end{solution}
+\kpoint{间断点分类与举例}
+\end{problem}           
+
+
+
+\begin{problem}求函数$y = 6x + \dfrac{1}{x}$的连续区间,若有间断点,试指出间断点的类型.
+	
+	\begin{solution} 函数的连续区间为$( - \infty,\mspace{6mu} 0) \cup (0,\mspace{6mu} + \infty)$,点$x = 0$为函数的第二类无穷间断点.
+		
+	\end{solution}
+
+\kpoint{间断点分类与举例}
+
+\end{problem}           
+
+
+\begin{problem}讨论函数$\displaystyle f(x) = \lim_{t \rightarrow x}\left( \dfrac{x - 1}{t - 1} \right)^{\frac{t}{x - t}}$的连续性.
+	
+	\begin{solution} 
+		因为
+		$$f(x) = \lim_{t \rightarrow x}\left( \frac{x - 1}{t - 1} \right)^{\frac{t}{x - t}} = \lim_{t \rightarrow x}\left( 1 + \frac{x - t}{t - 1} \right)^{\frac{t}{x - t}}\mspace{6mu}=_{}^{令y = \frac{x - t}{t - 1}}{}\mspace{6mu}\lim_{y \rightarrow 0}\left( 1 + y \right)^{\frac{x + y}{y(x - 1)}} = \e^{\frac{x}{x - 1}}$$
+		
+		其在点$x = 1$处没有定义,是间断点,故$f(x)$的连续区间为$( - \infty,\mspace{6mu} 1) \cup (1,\mspace{6mu} + \infty)$,点$x = 1$为$f(x)$的第二类无穷间断点.
+		
+	\end{solution}
+
+\kpoint{重要极限Ⅱ及其应用}
+\end{problem}           
+
+
+
+\begin{problem}讨论函数$f(x) =  \begin{cases}
+	\cos x & x \geq 0 \\
+	x + 1 & x < 0 \\
+	\end{cases} $在点$x = 0$处的连续性.
+	
+	\begin{solution} 
+		因为
+		$$\lim_{x \rightarrow 0^{+}}f(x) = \lim_{x \rightarrow 0^{+}}\cos x = 1,\ \lim_{x \rightarrow 0^{-}}f(x) = \lim_{x \rightarrow 0^{-}}(x + 1) = 1,$$
+		所以$f(x)$在点$x = 0$处连续.
+	\end{solution}
+
+\kpoint{连续的定义及其等价形式}
+\end{problem}           
+
+
+\begin{problem}设函数$\displaystyle y = f\left( x \right) = \begin{cases}
+	\dfrac{\sqrt{a} - \sqrt{a - x}}{x} & x < 0 \\
+	\dfrac{\cos x}{x + 2} & x \geq 0 \\
+	\end{cases} \ \left( a > 0 \right)$
+	
+	(1) 当$a$取何值时,点$x = 0$是函数$f\left( x \right)$的间断点？是何种间断点？
+	
+	(2) 当$a$取何值时,函数$f\left( x \right)$在$\left( - \infty ， + \infty \right)$上连续？为什么？
+	
+	\begin{solution}(1) 在点$x = 0$处,$$f(0) = \frac{1}{2},\ \lim_{x \rightarrow 0^{+}}f(x) = \lim_{x \rightarrow 0^{+}}\frac{\cos x}{x + 2} = \frac{1}{2},$$
+		
+		$$\lim_{x \rightarrow 0^{-}}f(x) = \lim_{x \rightarrow 0^{-}}\frac{\sqrt{a} - \sqrt{a - x}}{x} = \lim_{x \rightarrow 0^{-}}\frac{1}{\sqrt{a} + \sqrt{a - x}} = \frac{1}{2\sqrt{a}}.$$
+		
+	故当$a > 0$且$a \neq 1$时,由于$\displaystyle \lim_{x \rightarrow 0^{+}}f(x) \neq \lim_{x \rightarrow 0^{-}}f(x)$,所以点$x = 0$是$f\left( x \right)$的跳跃间断点.
+		
+		(2) 当$a = 1$时,由于$\displaystyle \lim_{x \rightarrow 0^{+}}f(x) = \lim_{x \rightarrow 0^{-}}f(x) = f(0)$,则$f\left( x \right)$在点$x = 0$处连续. 又因为在$( - \infty,0)$或$(0, + \infty)$上$f\left( x \right)$为初等函数,所以连续.故当$a = 1$时,函数$f\left( x \right)$在$\left( - \infty ， + \infty \right)$上连续.
+		
+	\end{solution}
+
+\kpoint{连续的定义及其等价形式}
+\end{problem}           
+
+
+
+\begin{problem}求函数$\displaystyle f(x) = \lim_{n \rightarrow \infty}\frac{x(x^{2n} - 1)}{x^{2n} + 1}$的解析式,并判断它的间断点及其类型.
+	
+	\begin{solution} $f(x) =  \begin{cases}
+		x & x < - 1 \\
+		0 & x = - 1 \\x & - 1 < x < 1 \\
+		0 & x = 1 \\
+		x & x > 1 \\
+		\end{cases} $，$x = - 1,x = 1$都是跳跃间断点.
+		
+	\end{solution}
+
+\kpoint{间断点分类与举例}
+
+\end{problem}
+
+
+\makepart{分析与证明题}
+
+\begin{problem} 用函数极限的定义证明$\displaystyle \lim_{x \rightarrow - \frac{1}{2}}\frac{1 - 4x^{2}}{2x + 1} = 2$.
+	
+	\begin{solution} ${\forall} {\varepsilon > 0}$,要使
+		
+		$$\left| \frac{1 - 4x^{2}}{2x + 1} - 2 \right| = \left| 2x + 1 \right| = 2\left| x + \frac{1}{2} \right| < \varepsilon$$
+		成立,只需$\left| x + \dfrac{1}{2} \right| < \dfrac{\varepsilon}{2}$,取$\delta = \dfrac{\varepsilon}{2}$,则当$0 < \left| x - ( - \dfrac{1}{2}) \right| < \delta$时,都有
+		
+		$$\left| \frac{1 - 4x^{2}}{2x + 1} - 2 \right| < \varepsilon,$$
+		故
+		$$\lim_{x \rightarrow - \frac{1}{2}}\frac{1 - 4x^{2}}{2x + 1} = 2.$$
+		
+	\end{solution}
+\kpoint{函数在固定点的极限与单侧极限}
+\end{problem}           
+
+
+\begin{problem}设$x \rightarrow x_{0}$时,$\alpha(x)$与$\beta(x)$是等价无穷小,且 $\lim_{x \rightarrow x_{0}}\alpha(x)f(x) = A$. 证明$\lim_{x \rightarrow x_{0}}\beta(x)f(x) = A$.
+	
+	\begin{solution}
+		由条件可得
+		$$\begin{aligned} \lim _{x \rightarrow x_{0}} \beta(x) f(x) &=\lim _{x \rightarrow x_{0}} \frac{\beta(x)}{\alpha(x)} \cdot \alpha(x) \cdot f(x) \\ &=\lim _{x \rightarrow x_{0}} \frac{\beta(x)}{\alpha(x)} \cdot \lim _{x \rightarrow x_{0}} \alpha(x) \cdot f(x) \\ &=1 \cdot A \\ &=A \end{aligned}$$
+		
+	\end{solution}
+\kpoint{极限的四则运算法则及有理分式的极限}
+		
+\end{problem}          
+
+ \begin{problem}设$f(x),\mspace{6mu} g(x)$为连续函数,试证明$M(x) = \max\{ f(x),\mspace{6mu} g(x)\}$也是连续函数.
+	
+	\begin{solution} 易知 $$M(x) = \max\{ f(x),\mspace{6mu} g(x)\} = \frac{1}{2}\lbrack f(x) + g(x)\rbrack + \frac{1}{2}\left| f(x) - g(x) \right|$$
+		
+		$f(又x),\mspace{6mu} g(x)$为连续函数,故$f(x) + g(x),\mspace{6mu} f(x) - g(x)$均为连续函数,从而$\left| f(x) - g(x) \right|$是连续函数.
+		
+		所以有$$M(x) = \frac{1}{2}\lbrack f(x) + g(x)\rbrack + \frac{1}{2}\left| f(x) - g(x) \right|$$是连续函数.
+		
+	\end{solution}
+\kpoint{函数连续的性质}
+	
+\end{problem}
+
+\begin{problem}
+	设函数$f(x)$在$( - \infty, + \infty)$上有定义,且在点$x = 0$处连续,又对任意的$x_{1}$和$x_{2}$,有$f(x_{1} + x_{2}) = f(x_{1}) + f(x_{2})$.证明:$f(x)$在$( - \infty, + \infty)$内连续.
+	
+	\begin{solution} 令$x_{1} = 0,\mspace{6mu} x_{2} = 0$,得$f(0) = 0$;	
+		又令$x_{1} = x,\mspace{6mu} x_{2} = \Delta x$,则$f(x + \Delta x) = f(x) + f(\Delta x)$,
+		即
+		$$\Delta y = f(x + \Delta x) - f(x) = f(\Delta x),$$ 而$f(x)$在点$x = 0$处连续,
+		
+		所以 $$\displaystyle \lim_{\Delta x \rightarrow 0}\Delta y = \lim_{\Delta x \rightarrow 0}f(\Delta x) = f(0) = 0,$$故$f(x)$在$( - \infty, + \infty)$内连续.
+		
+	\end{solution}
+\kpoint{连续的定义及其等价形式}
+\end{problem}
+
+\begin{problem}
+	证明方程$x = a\sin x + 2\mspace{6mu}\mspace{6mu}(a > 0)$至少有一个正根,并且不超过$a + 2$.
+	
+	\begin{solution} 设$f(x) = x - a\sin x - 2$,下面分两种情形来讨论:
+		
+		情形1：若$\sin(a + 2) = 1$,则因为$a > 0$,故$a + 2$是方程$x = a\sin x + 2\mspace{6mu}\mspace{6mu}(a > 0)$的正根,并且不超过$a + 2$.
+		
+		情形2： 若$\sin(a + 2) \neq 1$,则因为$a > 0$,故$$f(a + 2) = a\lbrack 1 - \sin(a + 2)\rbrack > 0,\ f(0) = - 2 < 0.$$
+		又因$f(x)$在$\lbrack 0,a + 2\rbrack$上连续,故由零点定理知，$\exists\xi \in (0,a + 2)$,使得$f(\xi) = 0$, 因此$\xi$是方程$x = a\sin x + 2\mspace{6mu}\mspace{6mu}(a > 0)$的正根,并且不超过$a + 2$.
+		
+	\end{solution}
+
+\kpoint{闭区间上连续函数的性质}
+\end{problem}

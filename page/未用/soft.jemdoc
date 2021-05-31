@@ -1,0 +1,13 @@
+# jemdoc: addcss{person.css}
+# jemdoc: nofooter
+= A Package for Partical Differential Equations with random inputs
+
+
+~~~
+
+{{<body> <font color="red">The code for the manuscript ``Localized stochastic Galerkin methods for Helmholtz problems close to resonance"  can be download from </font> </body> }} [/soft/SFEM.zip  *here*].
+~~~
+
+
+
+#include{footer.jemdoc}

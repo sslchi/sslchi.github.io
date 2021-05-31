@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="person.css" type="text/css" />
+<title>使用FFT计算泰勒展开的系数</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>使用FFT计算泰勒展开的系数</h1>
+<div id="subtitle"><!-- <font size="50">       o(∩_∩)o</font><br/> --></div>
+</div>
+<p><!-- <font size="50"> 年轻人，不要老想着走捷径！</font><br/> -->
+
+
+我们知道，对于足够光滑的函数\(f(x)\)，其泰勒展开（Taylor series）为：</p>
+<p style="text-align:center">
+\[f(x)=c_0+c_1x+c_2x^2+c_3x^3+\cdots\]
+</p><p>其中</p>
+<p style="text-align:center">
+\[c_n=\frac{f^{(n)}(0)}{n!}.\]
+</p><p>问题是：应该如何使用数值方法计算系数\(c_n\)呢？
+
+答案是：<b></b>使用快速傅里叶变换<b></b>。
+</p>
+<h2>思路与算法</h2>
+<p>
+我们考虑复数域上的函数\(f(z)\)，其在自变量满足 \( |z|&lt; R \) 时解析，则其洛朗展开为：
+</p>
+<p style="text-align:center">
+\[f(z)=c_0+c_1z+c_2z^2+c_3z^3+\cdots\]
+</p><p>
+如果将自变量限制在实数轴\(z=x\)上，就可以得到泰勒展开
+</p>
+<p style="text-align:center">
+\[f(x)=c_0+c_1x+c_2x^2+c_3x^3+\cdots\]
+</p><p>
+如果将自变量限制在单位圆\(z=e^{i\theta}\)上，并记\(g(\theta)=f(e^{i\theta})\)，就可以得到傅里叶展开
+</p>
+<p style="text-align:center">
+\[g(\theta)=c_0+c_1e^{i\theta}+c_2e^{2i\theta}+\cdots\]
+</p><p>
+显然上述三式中的系数\(c_n\)都是相等的，因而我们可以用计算傅里叶展开系数的快速傅里叶变换求泰勒展开的系数。
+
+
+
+在Matlab中，我们可以用十几行左右的代码实现上述算法，具体代码如下：
+</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+function c = taylorcoff(f,n)
+% Compute the coefficient of Taylor series.
+%
+% C = taylorcoff(F,N), where F is a function
+% handle and N is the number of coefficents.
+% The function F must be analytic in a
+% neighborhood of the unit disc, since the
+% coefficients are computed via FFT.
+%
+
+
+if nargin &lt; 2
+    n = 10;
+end
+
+if ( ~isnumeric(f) )
+    % Use FFT to get coeffs.
+    N = 2048;
+    z = exp(2i*pi*(0:N-1)'/N);
+    f = fft(f(z))/N;
+
+    % Discard near-zero coefficients.
+    tc = 1e-15*norm(f);
+    f(abs(f) &lt; tc) = 0;
+
+    % Make real functions real.
+    if ( norm(imag(f), inf) &lt; tc )
+        f = real(f);
+    end
+    c = [f(:) ; zeros(n - length(f), 1)];
+    c = c(1:n);
+end
+</pre></div></div>
+<h2>测试</h2>
+<p>我们以两个测试问题为例，观察上述算法的效果。
+</p>
+<h3>测试问题1</h3>
+<p>我们对函数\(f(x)=e^x\)进行测试，容易知道函数\(e^x\)的泰勒展开为：
+</p>
+<p style="text-align:center">
+\[e^x = 1+ \frac{x}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots\]
+</p><p></p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt; f = @(x) exp(x);
+&gt;&gt; c1 = taylorcoff(f,50);
+&gt;&gt; c2 = 1./[1,factorial(1:49)];
+&gt;&gt; plot(c1-c2','r.-','markersize',10)
+</pre></div></div>
+<p>运行结果为：
+</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/bccd07b5-5243-461a-a10c-1bb94d7a3d34.png" />
+
+总体说来效果不错。
+</p>
+<h3>测试问题2</h3>
+<p>函数
+</p>
+<p style="text-align:center">
+\[f(x)=\frac{1}{1-0.5x}\]
+</p><p>
+的泰勒展开的系数为\(c_n=1/2^n\)。测试代码如下：
+</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+&gt;&gt; f = @(x) 1./(1-0.5*x);
+&gt;&gt; c1 = taylorcoff(f,50);
+&gt;&gt; c2 = 1./2.^([0:49]);
+&gt;&gt; plot(c1-c2','r.-','markersize',10)
+</pre></div></div>
+<p>运行结果为：
+</p>
+<p><img src="https://imgkr.cn-bj.ufileos.com/b98989b6-2dc0-443e-97e6-d0d59968a143.png" /></p>
+<h2>注意事项</h2>
+<p><b></b>函数\(f(x)\)的解析区域必须包含单位圆，否则结果可能不对。<b></b>  
+
+例如，函数
+</p>
+<p style="text-align:center">
+\[f(x)=\frac{1}{1-2x}\]
+</p><p>
+的泰勒展开的系数为\(c_n=2^n\)。但使用上述算法计算得到的系数为全为\(0\)，显然不对。
+</p>
+<h2>参考文献</h2>
+<p>
+<a href="1" target=&ldquo;blank&rdquo;>1</a> <a href="http://dev.ipol.im/~coco/website/taylorfourier.html" target=&ldquo;blank&rdquo;>Taylor and Fourier series are the same.</a>
+
+
+
+</p>
+<div id="footer">
+<div id="footer-text">
+Copyright &copy; <a href="https://sslchi.github.io" target="blank">Guanjie</a>
+</div>
+</div>
+</div>
+</body>
+</html>
