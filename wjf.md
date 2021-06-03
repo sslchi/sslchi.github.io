@@ -13,7 +13,8 @@
 1. [[第6章]](./wjf/ppt/wjf_key_chap6.pdf)
 2. [[第8章]](./wjf/ppt/wjf_key_chap8.pdf)
 3. [[第9章]](./wjf/ppt/wjf_key_chap9.pdf)
-4. 
+4. [[第10章]](./wjf/ppt/wjf_key_chap10.pdf)
+5. [[第11章]](./wjf/ppt/wjf_key_chap11.pdf)
 
 ## 课后习题选讲
 
