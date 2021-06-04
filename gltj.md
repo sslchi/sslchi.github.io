@@ -4,34 +4,11 @@
 
 吴传生 主编：《经济数学 — 概率论与数理统计》，高等教育出版社，2015年12月(2016年6月重印)， 第3版。
 
-
-
-## 重点内容
-
-1. [[第一周]](./gltj/ppt/gltj_keypoint_1.pdf)
-2. [[第二周]](./gltj/ppt/gltj_keypoint_2.pdf)
-3. [[第三周]](./gltj/ppt/gltj_keypoint_3.pdf)
-
-## 课件下载
-
-吴传生版《经济数学——概率论与数理统计》，点击相应的链接即可浏览或者下载。$\color{red}\text{注意，抢先版可能有错误。}$
-
-1. 第一章[[PPT]](./gltj/ppt/gltj_ppt_chap1.pdf)  [[打印版PPT]](./gltj/ppt/gltj_print_chap1.pdf)  (之前的勘误请点击[这里](./gltj/revise.html)查看)
-2.  
-
-## 课后习题选讲
-
-点击相应链接可以浏览笔记或者观看视频。
-
-## 练习题
-
-点击相应链接即可浏览。
-
 ## 历年试题
 
-1. 2017-2018学年 <a href='./gltj/exam/ex_2017.html'>[真题]</a> <a href='./gltj/exam/sex_2017.html'>[答案]</a>
-
-
+1. 2017-2018学年 <a href='./gltj/exam/gltj_xsim_2017_1.pdf'>[点此下载]</a> 
+2. 2016-2017学年 <a href='./gltj/exam/gltj_xsim_2016_2.pdf'>[点此下载]</a> 
+3. 2015-2016学年 <a href='./gltj/exam/gltj_xsim_2015_2.pdf'>[点此下载]</a> 
 
 ## 参考文献
 
