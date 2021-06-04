@@ -27,14 +27,28 @@
 ## 历年试题
 
 1. 第1章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap1.pdf'>[点此下载]</a>
+
 2. 第2章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap2.pdf'>[点此下载]</a>
+
 3. 第3章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap3.pdf'>[点此下载]</a>
+
 4. 第4章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap4.pdf'>[点此下载]</a>
+
 5. 第5章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap5.pdf'>[点此下载]</a>
+
 6. 第6章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap6.pdf'>[点此下载]</a>
+
+   勘误：
+
+   - 第29题应为 :求积分 $\displaystyle \int_{0}^{\color{red}1} x^{2} \sqrt{1-x^{2}} \mathrm{d} x$.  (最新文档已修改)
+
 7. 第7章历年期末试题 [[未曾考过]]()
+
 8. 第8章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap8.pdf'>[点此下载]</a>
+
 9. 第9章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap9.pdf'>[点此下载]</a>
+
 10. 第10章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap10.pdf'>[点此下载]</a>
+
 11. 第11章历年期末试题 <a href='./wjf/exam/wjf_xsim_chap11.pdf'>[点此下载]</a>
 
