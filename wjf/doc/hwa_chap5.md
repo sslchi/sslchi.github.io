@@ -423,13 +423,13 @@
     >
     > $\begin{aligned}\text{原式}  &= \int \frac{(4\sec t - 2)}{4\sec t \cdot 4\tan t} \cdot 4\sec t \cdot \tan tdt  \\&= \int \sec td t - \dfrac{1}{2}\int dt\\&= \ln|\sec t + \tan t| - \frac{1}{2}t + C_{1} \\&= \ln\left| \frac{x + 2}{4} + \frac{\sqrt{x^{2} + 4x - 12}}{4} \right| - \frac{1}{2}\arccos\frac{4}{x + 2} + C_{1} \\&=\ln\left| x + 2 + \sqrt{x^{2} + 4x - 12} \right| - \frac{1}{2}\arccos\frac{4}{x + 2} + C.\end{aligned}$
 
-19\. 求不定积分$\displaystyle \int \frac{dx}{a\sin x + b\cos x}.$
+19.  求不定积分$\displaystyle \int \frac{dx}{a\sin x + b\cos x}.$​
 
-解 令$a = A\cos\varphi,b = A\sin\varphi,$其中 $A = \sqrt{a^{2} + b^{2}},$ 则
-
-$$\tan\dfrac{\varphi}{2} = \dfrac{1 - \cos\varphi}{\sin\varphi} = \dfrac{\sqrt{a^{2} + b^{2}} - a}{b},$$
-
-$\begin{aligned}\text{原式}&= \frac{1}{\sqrt{a^{2} + b^{2}}}\int \frac{dx}{\sin\varphi\cos x + \cos\varphi\sin x}\\&= \frac{1}{\sqrt{a^{2} + b^{2}}}\int \frac{dx}{\sin(x + \varphi)}\\&= \frac{1}{\sqrt{a^{2} + b^{2}}}\ln\left| \frac{\tan\frac{x}{2} + \tan\frac{\varphi}{2}}{1 - \tan\frac{x}{2}\tan\frac{\varphi}{2}} \right| + C\\&= \frac{1}{\sqrt{a^{2} + b^{2}}}\ln\left| \frac{b\tan\frac{x}{2} - a + \sqrt{a^{2} + b^{2}}}{b - \tan\frac{x}{2}(\sqrt{a^{2} + b^{2}} - a)} \right| + C.\end{aligned}$
+    > 解 令$a = A\cos\varphi,b = A\sin\varphi,$其中 $A = \sqrt{a^{2} + b^{2}},$ 则
+    >
+    > $$\tan\dfrac{\varphi}{2} = \dfrac{1 - \cos\varphi}{\sin\varphi} = \dfrac{\sqrt{a^{2} + b^{2}} - a}{b},$$
+    >
+    > $\begin{aligned}\text{原式}&= \frac{1}{\sqrt{a^{2} + b^{2}}}\int \frac{dx}{\sin\varphi\cos x + \cos\varphi\sin x}\\&= \frac{1}{\sqrt{a^{2} + b^{2}}}\int \frac{dx}{\sin(x + \varphi)}\\&= \frac{1}{\sqrt{a^{2} + b^{2}}}\ln\left| \frac{\tan\frac{x}{2} + \tan\frac{\varphi}{2}}{1 - \tan\frac{x}{2}\tan\frac{\varphi}{2}} \right| + C\\&= \frac{1}{\sqrt{a^{2} + b^{2}}}\ln\left| \frac{b\tan\frac{x}{2} - a + \sqrt{a^{2} + b^{2}}}{b - \tan\frac{x}{2}(\sqrt{a^{2} + b^{2}} - a)} \right| + C.\end{aligned}$
 
 20. 求不定积分$\displaystyle \int \frac{1}{\sin^3\cos x}dx$
 
