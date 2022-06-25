@@ -1,4 +1,4 @@
-DOCS=index wjf gltj  nspde nspde_chap2 nspde_chap3 nspde_conventions
+DOCS=index wjf gltj  nspde nspde_chap2 nspde_chap3 nspde_conventions err
 HDOCS=$(addsuffix .html, $(DOCS))
 HDOCS=$(addprefix sources,$(HDOCS))
 HHDOCS=$(addsuffix .html, $(DOCS))

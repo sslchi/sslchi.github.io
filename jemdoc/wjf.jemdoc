@@ -1,17 +1,21 @@
 # jemdoc: addcss{person.css}
 # jemdoc: nofooter
 # jemdoc: menu{menu_teaching}{wjf.html}
-= 高等数学B-微积分
+= 高等数学B-微积分（经管）
+
+~~~
+{}{img_left}{../docs/wjf/wjf_v4.png}{高等数学B-微积分}{350}{}{}
+~~~
 
 == 选用教材
 
-《经济数学--微积分》，主编：吴传生， 高等教育出版社(第4版)
+吴传生主编：《经济数学--微积分》， 高等教育出版社，2021年11月第4版
 
 == 参考文献
 
 . 赵树嫄主编：《经济应用数学基础（一） ——微积分》，中国人民大学出版社， 2012年 10 月第 3 版
-. 吴赣昌主编，《微积分》（经管类，上、下册），中国人民大学出版社， 2012 年 12 月第 4 版
-. 吴传生主编，《经济数学－微积分学习辅导与习题选解》，高等教育出版社， 2016 年1 月第 1 版  
+. 吴赣昌主编：《微积分》（经管类，上、下册），中国人民大学出版社， 2012 年 12 月第 4 版
+. 吴传生主编：《经济数学－微积分学习辅导与习题选解》，高等教育出版社， 2016 年1 月第 1 版  
 
 == 考核方式
 
@@ -24,8 +28,9 @@
    题型：填空、选择、计算、证明题和应用题等；  
 
 - 平时成绩：满分100，考核项目与评分标准如下:
-
-{{<table border="1" align="center">
+~~~
+{}{raw}
+<table border="1"  width="450"  align="center">
     <tr>
         <td>考核项目</td>
         <td>课堂表现</td>
@@ -48,7 +53,7 @@
         <td>20%</td>
     </tr>
 </table>
-}}
+~~~
 
 == 课件下载
 
@@ -82,7 +87,7 @@
  </table>
 ~~~
 
-== 经典习题
+== 习题汇编
 
 ~~~
 {}{raw}
@@ -106,6 +111,59 @@
  	<td ><a href="../docs/wjf/xsim_chap8.pdf"></a></td>
     </tr>
  </table>
+~~~
+
+
+== 勘误信息
+
+我把目前发现的所有错误列在了下面，列表中的“XXXX习题汇编YY”即为“XXX习题汇编中的第YY章”。
+
+~~~
+{微积分课件}
+
+感谢@黄静思等人提供的勘误信息！\n\n
+
+1. 微积分课件第4章35页最后一行公式应为：
+\(
+   f\left(x_{1}\right)+f\left(x_{2}\right)=2 f\left(x_{0}\right)+\frac{\left(x_{1}-x_{2}\right)^{2}}{\color{red}8}\left(f^{\prime \prime}\left(\xi_{1}\right)+f^{\prime \prime}\left(\xi_{2}\right)\right),
+\)
+2. 微积分课件第5章12页例3第(2)小题：$\displaystyle  \int \sin(3x+4)\mathrm{d}{x}$ 答案应为 ${\color{red}-\dfrac13}\cos (3x+4)+C$;\n
+
+3. 微积分课件第5章12页练习1第(1)小题：$\displaystyle \int \mathrm{e}^{-3x+2}\mathrm{d}{x}$ 答案应为  $-\dfrac13\mathrm{e}^{-3x+{\color{red}2}}+C$;\n
+
+4. 微积分课件第5章12页练习6：求不定积分 $\displaystyle \int \cos^2 2x \mathrm{d}{x}$, 答案应为 $\dfrac{1}{8} \sin4x +\dfrac{x}{2}+C$; \n
+
+5.  微积分课件第5章第20页例19：应为
+
+\(
+ \begin{array}{ll}
+   \displaystyle \int \frac{1}{\sqrt{x+1}+\sqrt[3]{x+1}} \mathrm{d}  x & \displaystyle =\int \frac{1}{t^{3}+t^{2}} \cdot 6 t^{5} \mathrm{d}  t
+    =6 \int \frac{t^{3}}{t+1} \mathrm{d}  t\\
+   	 &\displaystyle =2 t^{3}-3 t^{2}+6 t{\color{red}-6 }\ln |t+1|+C\\
+   	 &\displaystyle = 2 \sqrt{x+1}-3 \sqrt[3]{x+1}+6 \sqrt[6]{x+1}\\
+   	& \displaystyle \quad {\color{red}-6} \ln (\sqrt[6]{x+1}+1)+C
+  \end{array}
+\)
+
+\n
+6. 微积分课件第5章第26页定理3下侧应为：1. 分母中若有因式${\color{red}(x+a)^k}$时，则分解后为$\ldots$;\n
+~~~
+
+~~~
+{微积分习题汇编}
+
+感谢@yx, @Camellia 等人提供的勘误信息！\n\n
+
+1. 微积分习题汇编01第01题：题目中“需求弹性为$\displaystyle\eta(100)=-\frac{100}{f(100)},f'(100)=0.25$”应改为“需求弹性为$\displaystyle\eta(100)=-\frac{100}{f(100)}{\color{red}\cdot}f'(100)=0.25$”
+\n
+2. 微积分习题汇编第6章第9题参考答案应为 ${\color{red}B}$, 此题视频讲解答案是正确的.
+\n
+3. 微积分习题汇编第06章第34题视频讲解59秒左右, 第一行第一个等号后应为：$\displaystyle  \int_{-2}^{\color{red}-1}(x^2-2x-2),$ 相应地, 第二行第一个等号后应为：$\displaystyle \frac13 x^3-x^2-3x\big|_{-2}^{\color{red}-1}.$ 此处为笔误, 最终结果无误.
+\n
+4. 微积分习题汇编第08章第29题视频讲解05分33秒左右, 最后一行应为：$\displaystyle f_1'+xyf_{11}''-\frac{1}{x^2}f_{\color{red}2}'-\frac{y}{x^3}f_{22}'',$ 此处为笔误+口误.
+\n
+5. 微积分习题汇编第10章第16题视频讲解02分55秒处, 特征方程应为：$\color{red}\lambda ^2- 2 = 0.$ 该错误为笔误/口误不改变原有结论.
+\n
 ~~~
 
 == 课后习题讲解
