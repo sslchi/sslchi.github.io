@@ -1,0 +1,115 @@
+# jemdoc: addcss{person.css}
+# jemdoc: nofooter
+# jemdoc: menu{menu_teaching}{wjf.html}
+= 高等数学B-微积分
+
+== 选用教材
+
+《经济数学--微积分》，主编：吴传生， 高等教育出版社(第4版)
+
+== 参考文献
+
+. 赵树嫄主编：《经济应用数学基础（一） ——微积分》，中国人民大学出版社， 2012年 10 月第 3 版
+. 吴赣昌主编，《微积分》（经管类，上、下册），中国人民大学出版社， 2012 年 12 月第 4 版
+. 吴传生主编，《经济数学－微积分学习辅导与习题选解》，高等教育出版社， 2016 年1 月第 1 版  
+
+== 考核方式
+
+{{<font color="red"> 最终成绩 = 期末成绩 × 50% + 平时成绩 × 50% </font>}}
+
+
+- 期末成绩：满分 100, 闭卷考试 (**教考分离**)
+\n
+
+   题型：填空、选择、计算、证明题和应用题等；  
+
+- 平时成绩：满分100，考核项目与评分标准如下:
+
+{{<table border="1" align="center">
+    <tr>
+        <td>考核项目</td>
+        <td>课堂表现</td>
+        <td>课外作业</td>
+        <td>阶段测验</td>
+        <td>期中测验</td>
+    </tr>
+   <tr>
+        <td>考核次数</td>
+        <td>20</td>
+        <td>15</td>
+        <td>2</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>所占比例</td>
+        <td>20%</td>
+        <td>30%</td>
+        <td>30%</td>
+        <td>20%</td>
+    </tr>
+</table>
+}}
+
+== 课件下载
+
+~~~
+{}{raw}
+<table border="0"  width="450"  align="center">
+    <tr>
+	<td><a href="../docs/wjf/print_chap1.pdf">第1章</a></td>
+	<td ><a href="../docs/wjf/print_chap2.pdf">第2章</a></td>
+        	<td><a href="../docs/wjf/print_chap3.pdf">第3章</a></td>
+        	<td ><a href="../docs/wjf/print_chap4.pdf">第4章</a></td>
+    </tr>
+    <tr>
+	<td ><a href="../docs/wjf/print_chap5.pdf">第5章</a></td>
+          	<td ><a href="../docs/wjf/print_fx1.pdf">复习I</a></td>
+          	<td ><a href="../docs/wjf/print_chap6.pdf">第6章</a></td>
+          	<td ><a href="../docs/wjf/print_chap7.pdf">第7章</a></td>
+    </tr>
+    <tr>
+	<td ><a href="../docs/wjf/print_chap8.pdf">第8章</a></td>
+          	<td ><a href="../docs/wjf/print_chap9.pdf">第9章</a></td>
+          	<td ><a href="../docs/wjf/print_chap10.pdf">第10章</a></td>
+          	<td ><a href="../docs/wjf/print_chap11.pdf">第11章</a></td>
+    </tr>
+    <tr>
+	<td ><a href="../docs/wjf/print_fx2.pdf">复习II</a></td>
+          	<td ><a href="../docs/wjf/print_fx1.pdf"></a></td>
+          	<td ><a href="../docs/wjf/print_chap6.pdf"></a></td>
+          	<td ><a href="../docs/wjf/print_chap7.pdf"></a></td
+    </tr>
+ </table>
+~~~
+
+== 经典习题
+
+~~~
+{}{raw}
+<table border="0"  width="450" align="center">
+    <tr>
+	<td><a href="../docs/wjf/xsim_chap1.pdf">第1章</a></td>
+	<td ><a href="../docs/wjf/xsim_chap2.pdf">第2章</a></td>
+        	<td><a href="../docs/wjf/xsim_chap3.pdf">第3章</a></td>
+        	<td ><a href="../docs/wjf/xsim_chap4.pdf">第4章</a></td>
+    </tr>
+    <tr>
+	<td ><a href="../docs/wjf/xsim_chap5.pdf">第5章</a></td>
+          	<td ><a href="../docs/wjf/xsim_chap6.pdf">第6章</a></td>
+          	<td ><a href="../docs/wjf/xsim_chap7.pdf">第7章</a></td>
+                <td ><a href="../docs/wjf/xsim_chap8.pdf">第8章</a></td>
+    </tr>
+    <tr>
+          	<td ><a href="../docs/wjf/xsim_chap9.pdf">第9章</a></td>
+          	<td ><a href="../docs/wjf/xsim_chap10.pdf">第10章</a></td>
+          	<td ><a href="../docs/wjf/xsim_chap11.pdf">第11章</a></td>
+ 	<td ><a href="../docs/wjf/xsim_chap8.pdf"></a></td>
+    </tr>
+ </table>
+~~~
+
+== 课后习题讲解
+
+部分课后习题讲解，请[https://www.bilibili.com/video/BV1zQ4y1z7qd *点击这里* ]查看。
+
+#include{footer.jemdocc}

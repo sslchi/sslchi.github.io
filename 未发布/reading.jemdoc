@@ -1,0 +1,137 @@
+# jemdoc: addcss{person.css}
+# jemdoc: nofooter
+= Reading Group of Scientific Computing
+
+
+{{<body> 
+The reading group is open and anyone interested in the materials is welcome to this meeting.
+If you want to give a talk in this meeting, please send the reading materials to 
+me <font color="red">at least one
+week before your talk</font> </body>. My email address is: wanggj(at)shanghaitech(dot)edu(dot)cn.
+</body> }}
+
+
+{{<body> <font color="red">If the materials are some papers, I will give the link of them, unless you have the copyrights of them.</font> </body> }}
+
+= Time and location
+~~~
+*Time: *4pm-5:30pm every Thursday.\n
+*Location: *1A-108 SIST building.
+~~~
+
+= Schedule
+
+
+# ~~~
+# {}{img_left}{PML.gif}{PML}{450}{} Solution of Helmholtz equation with point source\n
+# ~~~
+
+~~~
+{2019\/03\/07}
+*Speaker:* Ke Li (3)\n
+*Theme:* Multilevel Monte Carlo in Uncertainty Quantification\n
+*Materials:* [http://people.maths.ox.ac.uk/~gilesm/mc2013/ *mc2013*]
+~~~
+
+~~~
+{2019\/01\/3}
+*Speaker:* Kejun Tang (3)\n
+*Theme:* Neural odinary differential equation\n
+*Materials:* [https://arxiv.org/pdf/1806.07366.pdf  *download*]
+~~~
+
+
+~~~
+{2018\/12\/13}
+*Speaker:* Qiong Huang (2)\n
+*Theme:* Cubature, Approximation, and Isotropy in the Hypercube\n
+*Materials:* [http://people.maths.ox.ac.uk/trefethen/cubature_final.pdf  *download*]
+~~~
+
+
+~~~
+{2018\/12\/06}
+*Theme:*  Evaluation of failure probability via surrogate model\n
+*Speaker:* Ke Li (2)\n
+*Materials:* [/readinggroup/Ke2.pdf *download*]
+
+
+*Theme:* Bayesian Statistics: Computational Aspects\n
+*Speaker:* Daheng Cai (2)\n
+*Materials:* [/readinggroup/Daheng2.pdf  *download*]
+~~~
+
+
+
+
+~~~
+{2018\/11\/29}
+*Theme:* Multifidelity Monte Carlo Estimation\n
+*Speaker:* Jiaming Mei (2)\n
+*Materials:* [https://epubs.siam.org/doi/pdf/10.1137/17M1151006  *download*]
+
+
+*Theme:*  Unsupervised Generative Modeling\n
+*Speaker:* Kejun Tang (2)\n
+*Materials:* [https://journals.aps.org/prx/pdf/10.1103/PhysRevX.8.031012 *download*]
+~~~
+
+
+
+~~~
+{2018\/11\/22}
+*Theme:* Skeletonization Factorization\n
+*Speaker:* Zhihang Xu\n
+*Materials:* [https://web.stanford.edu/~lexing/spatialgaussian.pdf  *download*]
+
+
+*Theme:* Reduced bais collocation methods\n
+*Speaker:* Qiong Huang\n
+*Materials:* [https://epubs.siam.org/doi/pdf/10.1137/120881841  *download*]
+~~~
+
+
+~~~
+{2018\/11\/15}
+*Title:* DGM: A deep learning algorithm for solving partial differential
+equations\n
+*Speaker:* Kejun Tang\n
+*Materials:* [https://www.sciencedirect.com/science/article/pii/S0021999118305527?via%3Dihub  *download from JCP*] or [http://cn.arxiv.org/pdf/1708.07469v5 *download form arxiv*]
+
+~~~
+
+~~~
+{2018\/11\/08}
+*Title:* Convolutional Neural Networks (CNNs/ConvNets)\n
+*Speaker:* Ke Li\n
+*Materials:* [/readinggroup/Ke1.pdf  *download*]
+
+~~~
+
+~~~
+{2018\/11\/01}
+*Title:* Mathematical Introduction of Machine
+Learning\n
+*Speaker:* Daheng Cai\n
+*Materials:* [/readinggroup/Daheng1.pdf  *download*]
+
+~~~
+
+
+~~~
+{2018\/10\/25}
+*Title:* ANOVA-based Gaussian process emulation for high-dimensional stochastic partial differential equations\n
+*Speaker:* Chen Chen\n
+*Materials:* [/readinggroup/Chen1.pdf  *download*]
+
+~~~
+
+~~~
+{2018\/10\/18}
+*Title:* Sensitivity analysis using anchored ANOVA expansion and
+high-order moments computation\n
+*Speaker: *Jiaming Mei\n
+*Materials:* [https://onlinelibrary.wiley.com/doi/epdf/10.1002/nme.4856 *download* ]
+~~~
+
+#include{footer.jemdocc}

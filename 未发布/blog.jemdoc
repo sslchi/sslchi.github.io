@@ -1,0 +1,5 @@
+# jemdoc: menu{MENU_BLOG}{blog.html}, notime
+# jemdoc: nofooter
+= 一些小文
+
+#include{footer.jemdoc

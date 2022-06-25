@@ -1,0 +1,38 @@
+# jemdoc: menu{menu_nspde}{nspde.html}, notime
+# jemdoc: nofooter
+= Numerical Solution of Partial Differential Equations
+
+== 作业要求
+. 不接受deadline之后提交的作业.
+. 所有的程序作业应当放在名为+nspde\_yourID+的文件夹下，并压缩成一个文件提交.
+. 每次程序作业提供一个driver运行所有的程序, 生成所有的图片.
+. 除driver外，所有的程序放到+private+文件夹下.
+. driver请命名为：+homework1\_dirver\_yourID.m+， +homework2\_dirver\_yourID.m+ ....
+. 图片命名为+figx\_x+, 如Fig 2.2 命名为+fig2\_2+.
+. 所有的图片请保存在+nspde\_yourID+的+figure+文件夹下.
+. 程序作业的文件结构请参考下面的示例.
+
+~~~
+{文件结构示例}{}
+|
+| --- nspde_yourID
+|      |___________ figure
+|      |             |____________ fig2_2.fig
+|      |             |____________ fig2_2.eps
+|      |             .
+|      |             .
+|      |
+|      |___________ private
+|      |             |_____________ xx.m
+|      |             |_____________ xxx.m
+|      |             .
+|      |             .
+|      |
+|      |___________ homework1_dirver_yourID.m
+|      |___________ homework2_driver_yourID.m  
+|      .
+.      .
+.
+.
+~~~
+#include{footer.jemdoc

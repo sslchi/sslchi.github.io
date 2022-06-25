@@ -1,0 +1,72 @@
+# jemdoc: menu{menu_nspde}{nspde_chap2.html}, notime
+# jemdoc: nofooter
+= Numerical Solution of Partial Differential Equations
+
+{{<!-- <font size="50">       o(∩_∩)o</font><br/> -->}}
+{{<!-- <font size="50"> 年轻人，不要老想着走捷径！</font><br/> -->}}
+
+== 部分课后习题答案 
+[../docs/nspde/Chap2answer.pdf 点此查看]
+
+
+== 部分代码
+
+[../docs/nspde/NSPDE.zip 点此下载]
+== 部分图片解析解
+~~~
+{图2.2解析解}
+
+  \(
+   u(x,t) = \sum_{m=1}^{\infty} a_m\mbox{e}^{-(m\pi)^2t}\sin m\pi x,
+  \)
+其中
+\(
+a_m =  (8/m^2\pi^2)\sin(0.5m\pi).
+\)
+~~~
+
+
+~~~
+{图2.4解析解}
+
+  \(
+   u(x,t) = \sum_{m=1}^{\infty} a_m\mbox{e}^{-(m\pi)^2t}\sin m\pi x,
+  \)
+其中
+\(
+a_m =  (4/m^3\pi^3)(1-\cos(m\pi)).
+\)
+~~~
+
+~~~
+{图2.10解析解[../docs/nspde/fig2_10s.jpg (点此查看计算过程)]}
+\(
+u(x,t) = \sum_{m=1}^{\infty}a_m\mbox{e}^{-(0.5m\pi)^2t}\cos(0.5m\pi x),
+\)
+其中
+\(
+a_m = \int_{0}^{2}f(x)\cos(0.5m\pi x) \mbox{d}x, \
+f(x) = \left\{
+  \begin{array}{ll}
+  1-x^2, & 0\leq x \leq 1, \\
+  (x-2)^2-1, & 1 <x \leq 2. \\
+  \end{array}\right.
+\)
+~~~
+
+
+
+~~~
+{图2.11解析解}
+\(
+u(x,t) =  2/3+a_m\mbox{e}^{-(m\pi)^2t}\cos(m\pi x), 
+\)
+
+其中
+\(
+a_m = \int_{-1}^{1} (1-x^2)\cos(m\pi x)\mathrm{d}x.
+\)
+
+~~~
+
+#include{footer.jemdocc}
