@@ -21,11 +21,11 @@ MathJax.Hub.Config({
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Home</div>
-<div class="menu-item"><a href="../index.html">������ҳ</a></div>
-<div class="menu-category">ƫ΢�ַ�����ֵ��</div>
-<div class="menu-item"><a href="nspde.html">��ҵҪ��</a></div>
-<div class="menu-item"><a href="nspde_conventions.html" class="current">������д�淶</a></div>
-<div class="menu-category">��ҵ��ʾ</div>
+<div class="menu-item"><a href="../index.html">返回主页</a></div>
+<div class="menu-category">偏微分方程数值解</div>
+<div class="menu-item"><a href="nspde.html">作业要求</a></div>
+<div class="menu-item"><a href="nspde_conventions.html" class="current">代码书写规范</a></div>
+<div class="menu-category">作业提示</div>
 <div class="menu-item"><a href="nspde_chap2.html">Chapter&nbsp;2</a></div>
 <div class="menu-item"><a href="nspde_chap3.html">Chapter&nbsp;3</a></div>
 </td>
@@ -34,27 +34,27 @@ MathJax.Hub.Config({
 <h1>Numerical Solution of Partial Differential Equations</h1>
 <div id="subtitle"></div>
 </div>
-<h2>������д�淶</h2>
+<h2>代码书写规范</h2>
 <ol>
-<li><p>ע��Ӧ��ʹ��Ӣ��.</p>
+<li><p>注释应当使用英文.</p>
 </li>
-<li><p>���������ļ���������ͬ.</p>
+<li><p>函数名和文件名必须相同.</p>
 </li>
-<li><p>���ơ�ѭ�����Ӧ��ʹ������.</p>
+<li><p>控制、循环语句应当使用缩进.</p>
 </li>
-<li><p>�������������ݿ�����ǰ80��֮��.</p>
+<li><p>尽量将代码内容控制在前80列之内.</p>
 </li>
-<li><p>ͨ������£�һ�д���Ӧ��ֻ����һ����ִ�����.</p>
+<li><p>通常情况下，一行代码应当只包含一个可执行语句.</p>
 </li>
-<li><p>��Ԫ��������� <tt>==</tt>�� <tt>��=</tt>�� <tt>&amp;&amp;</tt>�� <tt>||</tt>�� ǰ��Ӧ�ü�һ���ո�.
+<li><p>二元运算符，如 <tt>==</tt>， <tt>～=</tt>， <tt>&amp;&amp;</tt>， <tt>||</tt>， 前后应该加一个空格.
 
-����Ĺ淶����ο� <a href="https://github.com/chebfun/chebfun/wiki/Coding-style-conventions/" target=&ldquo;blank&rdquo;>Chebfun coding style conventions</a>.
+更多的规范，请参考 <a href="https://github.com/chebfun/chebfun/wiki/Coding-style-conventions/" target=&ldquo;blank&rdquo;>Chebfun coding style conventions</a>.
 
 </p>
 </li>
 </ol>
 <div class="codeblock">
-<div class="blocktitle">����ʾ��</div>
+<div class="blocktitle">程序示例</div>
 <div class="blockcontent"><pre>
 function [x,w,v] = chebpts(n, varargin)
 %CHEBPTS Compute the second kind chebyshev points.
