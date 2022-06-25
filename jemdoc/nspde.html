@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Numerical Solution of Partial Differential Equations</title>
 <!-- MathJax -->
@@ -21,40 +21,83 @@ MathJax.Hub.Config({
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Home</div>
-<div class="menu-item"><a href="../index.html">è¿”å›ä¸»é¡µ</a></div>
-<div class="menu-category">åå¾®åˆ†æ–¹ç¨‹æ•°å€¼è§£</div>
-<div class="menu-item"><a href="nspde.html">ä½œä¸šè¦æ±‚</a></div>
-<div class="menu-item"><a href="nspde_conventions.html" class="current">ä»£ç ä¹¦å†™è§„èŒƒ</a></div>
-<div class="menu-category">ä½œä¸šæç¤º</div>
-<div class="menu-item"><a href="nspde_chap2.html">Chapter&nbsp;2</a></div>
-<div class="menu-item"><a href="nspde_chap3.html">Chapter&nbsp;3</a></div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href="nspde.html" class="current">Î¢·Ö·½³ÌÊıÖµ½â</a></div>
+<div class="menu-item"><a href="wjf.html">¸ßµÈÊıÑ§B-Î¢»ı·Ö</a></div>
+<div class="menu-item"><a href="gltj.html">¸ÅÂÊÂÛÓëÊıÀíÍ³¼Æ</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
 <h1>Numerical Solution of Partial Differential Equations</h1>
 <div id="subtitle"></div>
 </div>
-<h2>ä»£ç ä¹¦å†™è§„èŒƒ</h2>
+<h2>×÷ÒµÒªÇó</h2>
 <ol>
-<li><p>æ³¨é‡Šåº”å½“ä½¿ç”¨è‹±æ–‡.</p>
+<li><p>²»½ÓÊÜdeadlineÖ®ºóÌá½»µÄ×÷Òµ.</p>
 </li>
-<li><p>å‡½æ•°åå’Œæ–‡ä»¶åå¿…é¡»ç›¸åŒ.</p>
+<li><p>ËùÓĞµÄ³ÌĞò×÷ÒµÓ¦µ±·ÅÔÚÃûÎª<tt>nspde_yourID</tt>µÄÎÄ¼ş¼ĞÏÂ£¬²¢Ñ¹Ëõ³ÉÒ»¸öÎÄ¼şÌá½».</p>
 </li>
-<li><p>æ§åˆ¶ã€å¾ªç¯è¯­å¥åº”å½“ä½¿ç”¨ç¼©è¿›.</p>
+<li><p>Ã¿´Î³ÌĞò×÷ÒµÌá¹©Ò»¸ödriverÔËĞĞËùÓĞµÄ³ÌĞò, Éú³ÉËùÓĞµÄÍ¼Æ¬.</p>
 </li>
-<li><p>å°½é‡å°†ä»£ç å†…å®¹æ§åˆ¶åœ¨å‰80åˆ—ä¹‹å†….</p>
+<li><p>³ıdriverÍâ£¬ËùÓĞµÄ³ÌĞò·Åµ½<tt>private</tt>ÎÄ¼ş¼ĞÏÂ.</p>
 </li>
-<li><p>é€šå¸¸æƒ…å†µä¸‹ï¼Œä¸€è¡Œä»£ç åº”å½“åªåŒ…å«ä¸€ä¸ªå¯æ‰§è¡Œè¯­å¥.</p>
+<li><p>driverÇëÃüÃûÎª£º<tt>homework1_dirver_yourID.m</tt>£¬ <tt>homework2_dirver_yourID.m</tt> &hellip;.</p>
 </li>
-<li><p>äºŒå…ƒè¿ç®—ç¬¦ï¼Œå¦‚ <tt>==</tt>ï¼Œ <tt>ï½=</tt>ï¼Œ <tt>&amp;&amp;</tt>ï¼Œ <tt>||</tt>ï¼Œ å‰ååº”è¯¥åŠ ä¸€ä¸ªç©ºæ ¼.
+<li><p>Í¼Æ¬ÃüÃûÎª<tt>figx_x</tt>, ÈçFig 2.2 ÃüÃûÎª<tt>fig2_2</tt>.</p>
+</li>
+<li><p>ËùÓĞµÄÍ¼Æ¬Çë±£´æÔÚ<tt>nspde_yourID</tt>µÄ<tt>figure</tt>ÎÄ¼ş¼ĞÏÂ.</p>
+</li>
+<li><p>³ÌĞò×÷ÒµµÄÎÄ¼ş½á¹¹Çë²Î¿¼ÏÂÃæµÄÊ¾Àı.
+</p>
+</li>
+</ol>
+<div class="codeblock">
+<div class="blocktitle">ÎÄ¼ş½á¹¹Ê¾Àı</div>
+<div class="blockcontent"><pre>
+|
+| --- nspde_yourID
+|      |___________ figure
+|      |             |____________ fig2_2.fig
+|      |             |____________ fig2_2.eps
+|      |             .
+|      |             .
+|      |
+|      |___________ private
+|      |             |_____________ xx.m
+|      |             |_____________ xxx.m
+|      |             .
+|      |             .
+|      |
+|      |___________ homework1_dirver_yourID.m
+|      |___________ homework2_driver_yourID.m
+|      .
+.      .
+.
+.
+</pre></div></div>
+<p></p>
+<h2>´úÂëÊéĞ´¹æ·¶</h2>
+<ol>
+<li><p>×¢ÊÍÓ¦µ±Ê¹ÓÃÓ¢ÎÄ.</p>
+</li>
+<li><p>º¯ÊıÃûºÍÎÄ¼şÃû±ØĞëÏàÍ¬.</p>
+</li>
+<li><p>¿ØÖÆ¡¢Ñ­»·Óï¾äÓ¦µ±Ê¹ÓÃËõ½ø.</p>
+</li>
+<li><p>¾¡Á¿½«´úÂëÄÚÈİ¿ØÖÆÔÚÇ°80ÁĞÖ®ÄÚ.</p>
+</li>
+<li><p>Í¨³£Çé¿öÏÂ£¬Ò»ĞĞ´úÂëÓ¦µ±Ö»°üº¬Ò»¸ö¿ÉÖ´ĞĞÓï¾ä.</p>
+</li>
+<li><p>¶şÔªÔËËã·û£¬Èç <tt>==</tt>£¬ <tt>¡«=</tt>£¬ <tt>&amp;&amp;</tt>£¬ <tt>||</tt>£¬ Ç°ºóÓ¦¸Ã¼ÓÒ»¸ö¿Õ¸ñ.
 
-æ›´å¤šçš„è§„èŒƒï¼Œè¯·å‚è€ƒ <a href="https://github.com/chebfun/chebfun/wiki/Coding-style-conventions/" target=&ldquo;blank&rdquo;>Chebfun coding style conventions</a>.
+¸ü¶àµÄ¹æ·¶£¬Çë²Î¿¼ <a href="https://github.com/chebfun/chebfun/wiki/Coding-style-conventions/" target=&ldquo;blank&rdquo;>Chebfun coding style conventions</a>.
 
 </p>
 </li>
 </ol>
 <div class="codeblock">
-<div class="blocktitle">ç¨‹åºç¤ºä¾‹</div>
+<div class="blocktitle">³ÌĞòÊ¾Àı</div>
 <div class="blockcontent"><pre>
 function [x,w,v] = chebpts(n, varargin)
 %CHEBPTS Compute the second kind chebyshev points.
@@ -114,6 +157,18 @@ x = .5*(a+b) + .5*(b-a).*x;
 
 end
 </pre></div></div>
+<p></p>
+<h2>×÷ÒµÌáÊ¾</h2>
+<p></p>
+<ul>
+<li><p>µÚ2ÕÂ×÷ÒµÌáÊ¾  <a href="nspde_chap2.html" target=&ldquo;blank&rdquo;>µã»÷ÕâÀï</a></p>
+</li>
+<li><p>µÚ3ÕÂ×÷ÒµÌáÊ¾  <a href="nspde_chap3.html" target=&ldquo;blank&rdquo;>µã»÷ÕâÀï</a>
+
+
+</p>
+</li>
+</ul>
 <div id="footer">
 <div id="footer-text">
 Copyright &copy; <a href="https://sslchi.github.io" target="blank">Guanjie</a>

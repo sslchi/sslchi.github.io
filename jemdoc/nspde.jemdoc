@@ -1,4 +1,4 @@
-# jemdoc: menu{menu_nspde}{nspde.html}, notime
+# jemdoc: menu{menu_teach}{nspde.html}, notime
 # jemdoc: nofooter
 = Numerical Solution of Partial Differential Equations
 
@@ -35,4 +35,82 @@
 .
 .
 ~~~
+
+== 代码书写规范
+. 注释应当使用英文.
+. 函数名和文件名必须相同.
+. 控制、循环语句应当使用缩进.
+. 尽量将代码内容控制在前80列之内.
+. 通常情况下，一行代码应当只包含一个可执行语句.
+. 二元运算符，如 +==+， +～=+， +&&+， +||+， 前后应该加一个空格.
+
+更多的规范，请参考 [https://github.com/chebfun/chebfun/wiki/Coding-style-conventions/ Chebfun coding style conventions].
+
+# [http://www.maths.manchester.ac.uk/~higham/index.php Nicholas J. Higham] 的 [http://www.maths.manchester.ac.uk/~higham/mg/index.php  MATLAB guide] 是学习 MATLAB的一本很好的参考书.
+~~~
+{程序示例}{}
+function [x,w,v] = chebpts(n, varargin)
+%CHEBPTS Compute the second kind chebyshev points.
+%   [X,W,V] = CHEBPTS(N) retuns N Chebyshev points of the second kind in [-1, 1].
+%   X is the second kind Chebshev points, W is the weights of Clenshaw-Curtis
+%   quadrature, and V is the barycentric weights corresponding to the  Chebyshev
+%   points X.
+%
+%   [X,W,V] = CHEBPTS(N,[a,b]) retuns N Chebyshev points of the second kind in
+%   [a, b].
+%
+% Example:
+%
+%   [x, w] = chebpts(10, [-2,2]);
+%   w*x.^2  % quadrature of x^2 in [-2,2]
+%
+% This programe is adapted from Chebfun/chebtech2.chebpts, http://www.chebfun.org/
+
+
+if n == 1
+    x = 0;
+    w = 2;
+    v = 1;
+else
+    % Chebyshev points:
+    m = n - 1;
+    x = sin(pi*(-m:2:m)/(2*m)).';  % (Use of sine enforces symmetry.)
+    
+    % quadratrue weights
+    c = 2./[1, 1-(2:2:(m)).^2];    % Exact integrals of T_k (even)
+    c = [c, c(floor(n/2):-1:2)];   % Mirror for DCT via FFT
+    w = ifft(c);                   % Interior weights
+    w([1,n]) = w(1)/2;             % Boundary weights
+    
+    % barycentric interpolate weights
+    v = [0.5;ones(n-1,1)];        % Note v(1) is positive.
+    v(2:2:end) = -1;
+    v(end) = .5*v(end);
+end
+
+if nargin == 2
+    [x, w] =  rescale(x, w, varargin{1});
+end
+
+end
+
+
+function [x, w] = rescale(x, w, dom)
+%RESCALE   Rescale the quadrature points and weights.
+
+a = dom(1);
+b = dom(2);
+
+w = .5*w*(b-a);
+x = .5*(a+b) + .5*(b-a).*x;
+
+
+end
+~~~
+
+== 作业提示
+
+- 第2章作业提示  [nspde_chap2.html 点击这里]
+- 第3章作业提示  [nspde_chap3.html 点击这里]
+
 #include{footer.jemdoc
