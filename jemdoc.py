@@ -284,7 +284,7 @@ def raisejandal(msg, line=0):
   raise JandalError(s)
 
 def readnoncomment(f):
-  l = f.readline().decode('GBK')
+  l = f.readline().decode('utf-8')
   if l == '':
     return l
   elif l[0] == '#': # jem: be a little more generous with the comments we accept?
@@ -374,7 +374,7 @@ def insertmenuitems(f, mname, current, prefix):
 def out(f, s):
 #  print(type(s))
   if sys.version_info[0] == 2 and type(s) is StringType:
-    f.write(s.decode('GBK'))
+    f.write(s.decode('utf-8'))
   else:
     f.write(s)
 
@@ -479,7 +479,7 @@ def doincludes(f, l):
 
 def nl(f, withcount=False, codemode=False):
   """Get input file line."""
-  s = f.inf.readline().decode('GBK')
+  s = f.inf.readline().decode('utf-8')
   if not s and f.otherfiles:
     f.nextfile()
     return nl(f, withcount, codemode)
@@ -1260,7 +1260,7 @@ def procfile(f):
   js = []
   title = None
   while pc(f, False) == '#':
-    l = f.inf.readline().decode('GBK')
+    l = f.inf.readline().decode('utf-8')
     f.linenum += 1
     if doincludes(f, l[1:]):
       continue
