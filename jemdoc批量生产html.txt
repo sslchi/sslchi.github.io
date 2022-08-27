@@ -1,3 +1,6 @@
 1. 将pages中的所有html删除
 2. 命令窗口输入make
 3. index 放到根目录
+
+单页：
+python jemdoc.py -c mysite.conf gltj.jemdoc

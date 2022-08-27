@@ -30,27 +30,30 @@
 
 - 平时成绩：满分100，考核项目与评分标准如下:
 
-{{<table border="1" width="450" align="center">
+{{<table border="1" width="550" align="center">
     <tr>
         <td>考核项目</td>
         <td>课堂表现</td>
         <td>课外作业</td>
         <td>阶段测验</td>
         <td>期中测验</td>
+        <td>线上任务</td>
     </tr>
    <tr>
         <td>考核次数</td>
         <td>20</td>
-        <td>15</td>
+        <td>14</td>
         <td>2</td>
         <td>1</td>
+        <td>若干</td>
     </tr>
     <tr>
         <td>所占比例</td>
         <td>20%</td>
         <td>30%</td>
-        <td>30%</td>
         <td>20%</td>
+        <td>20%</td>
+        <td>10%</td>
     </tr>
 </table>
 }}
@@ -62,7 +65,7 @@
 
 ~~~
 {}{raw}
-<table border="0"  width="450"  align="center">
+<table border="0"  width="550"  align="center">
     <tr>
 	<td><a href="../docs/gltj/print_chap1.pdf">第1章</a></td>
 	<td ><a href="../docs/gltj/print_chap2.pdf">第2章</a></td>
@@ -82,7 +85,7 @@
 
 ~~~
 {}{raw}
-<table border="0"  width="450" align="center">
+<table border="0"  width="550" align="center">
     <tr>
 	<td><a href="../docs/gltj/xsim_chap1.pdf">第1章</a></td>
 	<td ><a href="../docs/gltj/xsim_chap2.pdf">第2章</a></td>
