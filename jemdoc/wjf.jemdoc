@@ -55,6 +55,50 @@
 </table>
 ~~~
 
+
+== 课后作业
+带\*的题目只做奇数小题；部分课后习题讲解，请[https://www.bilibili.com/video/BV1zQ4y1z7qd *点击这里* ]查看。
+
+~~~
+{}{raw}
+<table border="0"  width="450"  align="center">
+    <tr>  	<td>周次</td>  	<td >章节 </td> 	<td>主要内容</td>				<td>课后作业</td> </tr>
+    <tr> 	<td> </td>   	<td>1.1   </td> 	<td>集合</td> 				<td>-</td></tr>
+    <tr>	<td> </td>  	<td>1.2	</td> 	<td>映射与函数				</td> <td>6, 8, 9, 10</td> </tr>
+    <tr>	<td> </td>  	<td>1.3	</td> 	<td>复合函数、反函数、初等函数		</td> <td>4, 5, 6, 9, 10		</td> </tr>
+    <tr>	<td> </td>  	<td>1.4	</td> 	<td>函数关系的建立	</td> 			<td>6, 7			</td> </tr>
+    <tr>	<td> </td>  	<td>1.5	</td> 	<td>经济学中的常用函数			</td> <td>4, 5, 6</td> </tr>
+    <tr>	<td> </td>  	<td>2.1	</td> 	<td>数列的极限				</td> <td>6, 7, 8</td> </tr>
+    <tr>	<td> </td>  	<td>2.2	</td> 	<td>函数的极限				</td> <td>1, 2, 3, 8</td> </tr>
+    <tr>	<td> </td>  	<td>2.3	</td> 	<td>无穷小与无穷大				</td> <td>3, 4</td> </tr>
+    <tr>	<td> </td>  	<td>2.4	</td> 	<td>极限运算法则				</td> <td>2*, 3*, 4, 5</td> </tr>
+    <tr>	<td> </td>  	<td>2.5	</td> 	<td>极限存在准则、两个重要极限、连续复利	</td> <td>1*, 2*, 3</td> </tr>
+    <tr>	<td> </td>  	<td>2.6	</td> 	<td>无穷小的比较				</td> <td>2, 3*</td> </tr>
+    <tr>	<td> </td>  	<td>2.7	</td> 	<td>函数的连续性				</td> <td>3, 5, 6, 7</td> </tr>
+    <tr>	<td> </td>  	<td>2.8	</td> 	<td>闭区间上连续函数的性质			</td> <td>2, 3</td> </tr>
+    <tr>	<td> </td>  	<td>3.1	</td> 	<td>导数的概念				</td> <td>7*, 8, 9, 10, 13, 14, 15, 16, 17</td> </tr>
+    <tr>	<td> </td>  	<td>3.2	</td> 	<td>求导法则与基本初等函数			</td> <td>5*, 6*, 7*, 8, 9, 10*</td> </tr>
+    <tr>	<td> </td>  	<td>3.3	</td> 	<td>高阶导数 				</td> <td>1*, 3, 4, 5, 7*, 8</td> </tr>
+    <tr>	<td> </td>  	<td>3.4	</td> 	<td>隐函数及由参数方程所确定的函数的导数	</td> <td>1*, 3*, 4*, 5, 6*</td> </tr>
+    <tr>	<td> </td>  	<td>3.5	</td> 	<td>函数的微分				</td> <td>3*</td> </tr>
+    <tr>	<td> </td>  	<td>3.6	</td> 	<td>边际与弹性				</td> <td>-</td> </tr>
+    <tr>	<td> </td>  	<td>4.1	</td> 	<td>中值定理				</td> <td>2, 3, 4, 5, 6</td> </tr>
+    <tr>	<td> </td>  	<td>4.2	</td> 	<td>洛必达法则				</td> <td>1*, 2</td> </tr>
+     <tr>	<td> </td>  	<td>4.3	</td> 	<td>导数的应用				</td> <td>4*, 5*, 7*</td> </tr>
+    <tr>	<td> </td>  	<td>4.4	</td> 	<td>函数的最值及其应用			</td> <td>1*</td> </tr>
+    <tr>	<td> </td>  	<td>4.5	</td> 	<td>泰勒公式				</td> <td>-</td> </tr>
+    <tr>	<td> </td>  	<td>5.1	</td> 	<td>不定积分的概念、性质			</td> <td>1*</td> </tr>
+    <tr>	<td> </td>  	<td>5.2	</td> 	<td>换元积分法				</td> <td>1*</td> </tr>
+    <tr>	<td> </td>  	<td>5.3	</td> 	<td>分部积分法				</td> <td>1*, 2</td> </tr>
+    <tr>	<td> </td>  	<td>5.4	</td> 	<td>有理函数的不定积分			</td> <td>1*</td> </tr>
+
+
+
+ </table>
+~~~
+
+
+
 == 课件下载
 
 ~~~
@@ -166,8 +210,5 @@
 \n
 ~~~
 
-== 课后习题讲解
-
-部分课后习题讲解，请[https://www.bilibili.com/video/BV1zQ4y1z7qd *点击这里* ]查看。
 
 #include{footer.jemdocc}
