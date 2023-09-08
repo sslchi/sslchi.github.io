@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Numerical Solution of Partial Differential Equations</title>
 <!-- MathJax -->
@@ -21,99 +21,5 @@ MathJax.Hub.Config({
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Home</div>
-<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-category">Teaching</div>
-<div class="menu-item"><a href="nspde.html">微分方程数值解</a></div>
-<div class="menu-item"><a href="wjf.html">高等数学B-微积分</a></div>
-<div class="menu-item"><a href="gltj.html">概率论与数理统计</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Numerical Solution of Partial Differential Equations</h1>
-<div id="subtitle"></div>
-</div>
-<p><!-- <font size="50">       o(∩_∩)o</font><br/> --></p>
-<p><!-- <font size="50"> 年轻人，不要老想着走捷径！</font><br/> -->
-</p>
-<h2>部分课后习题答案 </h2>
-<p><a href="../docs/nspde/Chap2answer.pdf" target=&ldquo;blank&rdquo;>点此查看</a>
-
-</p>
-<h2>部分代码</h2>
-<p>
-<a href="../docs/nspde/NSPDE.zip" target=&ldquo;blank&rdquo;>点此下载</a></p>
-<h2>部分图片解析解</h2>
-<div class="infoblock">
-<div class="blocktitle">图2.2解析解</div>
-<div class="blockcontent">
-<p></p>
-<p style="text-align:center">
-\[
-   u(x,t) = \sum_{m=1}^{\infty} a_m\mbox{e}^{-(m\pi)^2t}\sin m\pi x,
-  \]
-</p><p>其中</p>
-<p style="text-align:center">
-\[
-a_m =  (8/m^2\pi^2)\sin(0.5m\pi).
-\]
-</p></div></div>
-<p></p>
-<div class="infoblock">
-<div class="blocktitle">图2.4解析解</div>
-<div class="blockcontent">
-<p></p>
-<p style="text-align:center">
-\[
-   u(x,t) = \sum_{m=1}^{\infty} a_m\mbox{e}^{-(m\pi)^2t}\sin m\pi x,
-  \]
-</p><p>其中</p>
-<p style="text-align:center">
-\[
-a_m =  (4/m^3\pi^3)(1-\cos(m\pi)).
-\]
-</p></div></div>
-<div class="infoblock">
-<div class="blocktitle">图2.10解析解<a href="../docs/nspde/fig2_10s.jpg" target=&ldquo;blank&rdquo;>(点此查看计算过程)</a></div>
-<div class="blockcontent">
-<p style="text-align:center">
-\[
-u(x,t) = \sum_{m=1}^{\infty}a_m\mbox{e}^{-(0.5m\pi)^2t}\cos(0.5m\pi x),
-\]
-</p><p>其中</p>
-<p style="text-align:center">
-\[
-a_m = \int_{0}^{2}f(x)\cos(0.5m\pi x) \mbox{d}x, \
-f(x) = \left\{
-  \begin{array}{ll}
-  1-x^2, &amp; 0\leq x \leq 1, \\
-  (x-2)^2-1, &amp; 1 &lt;x \leq 2. \\
-  \end{array}\right.
-\]
-</p></div></div>
-<p>
-</p>
-<div class="infoblock">
-<div class="blocktitle">图2.11解析解</div>
-<div class="blockcontent">
-<p style="text-align:center">
-\[
-u(x,t) =  2/3+a_m\mbox{e}^{-(m\pi)^2t}\cos(m\pi x), 
-\]
-</p><p>
-其中</p>
-<p style="text-align:center">
-\[
-a_m = \int_{-1}^{1} (1-x^2)\cos(m\pi x)\mathrm{d}x.
-\]
-</p><p></p>
-</div></div>
-<div id="footer">
-<div id="footer-text">
-Copyright &copy; <a href="https://sslchi.github.io" target="blank">Guanjie</a>
-</div>
-</div>
-</td>
-</tr>
-</table>
-</body>
-</html>

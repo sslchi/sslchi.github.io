@@ -1,6 +1,6 @@
 # jemdoc: addcss{person.css}
 # jemdoc: nofooter
-# jemdoc: menu{menu_teach}{wjf.html}
+#### jemdoc: menu{menu_teach}{wjf.html}
 = 高等数学B-微积分（经管）
 
 ~~~
