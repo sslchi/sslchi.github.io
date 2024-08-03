@@ -34,17 +34,17 @@ Email: +guanjie(at)lixin(dot)edu(dot)cn+
 # 王军华副校长：15301890053
 == Publications and preprints
 
-. X. Shi, H. Zhang and *G. Wang$^*$*. [https://doi.org/10.3390/math12020301 ANOVA-GP Modeling for High-Dimensional Bayesian Inverse Problems], Mathematics, 12(2), 301, 2024. \[[https://doi.org/10.3390/math12020301  link], [https://www.mdpi.com/2227-7390/12/2/301/pdf?version=1705484336 PDF]\]
+. X. Shi, H. Zhang and *G. Wang$^*$*. [https://doi.org/10.3390/math12020301 ANOVA-GP modeling for high-dimensional Bayesian inverse problems], Mathematics, 12(2), 301, 2024. \[[https://doi.org/10.3390/math12020301  link], [https://www.mdpi.com/2227-7390/12/2/301/pdf?version=1705484336 PDF]\]
 
 . *G. Wang*, S. Sahu and Q. Liao. [https://doi.org/10.1007/s10915-023-02417-w An adaptive ANOVA stochastic Galerkin method for partial differential equations with high-dimensional random inputs], Journal of Scientific Computing, 98 (1), 24, 2024. \[[https://doi.org/10.1007/s10915-023-02417-w link], [https://arxiv.org/pdf/2305.03939.pdf PDF]\]
 
 . *G. Wang* and Q. Liao. [https://doi.org/10.1016/j.amc.2023.128375 Reduced basis stochastic Galerkin methods for partial differential equations with random inputs], Applied Mathematics and Computation, 463, 128375, 2024. \[[https://doi.org/10.1016/j.amc.2023.128375  link], [docs/homepage/RbGalerkin.pdf PDF]\]
 
-. M. Li, Y. Feng and *G. Wang$^*$*. [https://doi.org/10.3390/math11122762 Estimating Failure Probability with Neural Operator Hybrid Approach], Mathematics, 11(12), 2762, 2023. \[[https://doi.org/10.3390/math11122762  link], [https://www.mdpi.com/2227-7390/11/12/2762/pdf?version=1687151226 PDF]\]
+. M. Li, Y. Feng and *G. Wang$^*$*. [https://doi.org/10.3390/math11122762 Estimating failure probability with neural operator hybrid approach], Mathematics, 11(12), 2762, 2023. \[[https://doi.org/10.3390/math11122762  link], [https://www.mdpi.com/2227-7390/11/12/2762/pdf?version=1687151226 PDF]\]
 
 . *G. Wang*, F. Xue and Q. Liao. [https://doi.org/10.1615/Int.J.UncertaintyQuantification.2021034247 Localized stochastic Galerkin methods for Helmholtz problems close to resonance], International Journal for Uncertainty Quantification, 11(4), 77-99, 2021. \[[https://doi.org/10.1615/Int.J.UncertaintyQuantification.2021034247  link], [https://par.nsf.gov/servlets/purl/10276500 PDF]\]
 
-. Q. Huang, K. Li, *G. Wang*, Q. Liao, X. Du. [https://doi.org/10.1109/CCDC49329.2020.9164272 Stochastic Finite element methods with the Euclidean degree for partial differential equations with random inputs], 2020 Chinese Control And Decision Conference (CCDC), Hefei, China,  634-640, 2020. \[[https://doi.org/10.1109/CCDC49329.2020.9164272 Link], [docs/homepage/ccdc_2020.pdf PDF]\]
+. Q. Huang, K. Li, *G. Wang*, Q. Liao, X. Du. [https://doi.org/10.1109/CCDC49329.2020.9164272 Stochastic finite element methods with the Euclidean degree for partial differential equations with random inputs], 2020 Chinese Control And Decision Conference (CCDC), Hefei, China,  634-640, 2020. \[[https://doi.org/10.1109/CCDC49329.2020.9164272 Link], [docs/homepage/ccdc_2020.pdf PDF]\]
         
 . *G. Wang* and Q. Liao. [https://global-sci.org/intro/article_detail/nmtma/16964.html An adaptive hybrid spectral method for stochastic Helmholtz problems], /Numerical Mathematics: Theory, Methods and Applications/, 13(4), 1007-1026, 2020. \[[https://global-sci.org/intro/article_detail/nmtma/16964.html Link], [docs/homepage/nmtma_2020.pdf PDF]\].
 
@@ -63,6 +63,7 @@ Email: +guanjie(at)lixin(dot)edu(dot)cn+
 - [http://www.chebfun.org/ Chebfun], numerical computing with functions.
 - [https://github.com/lyc102/ifem iFEM], adaptive finite element methods in 2D and 3D.
 - [https://github.com/sslchi/SISTThesis/ SISTThesis], a LaTeX thesis template for SIST.
+- [https://github.com/sslchi/lixinthesis lixinthesis], a LaTeX thesis template for LiXin.
 #- [https://mathicu.github.io/ Advanced Mathematics], classes teached in Lixin.
 #- [reading.html Reading Group of Scientific Computing], a reading group of SIST.
 #- [nspde.html Numerical Solution of Partial Differential Equations], a class assisted in SIST.
