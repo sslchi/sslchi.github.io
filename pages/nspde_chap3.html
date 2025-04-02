@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <link rel="stylesheet" href="person.css" type="text/css" />
 <title>Numerical Solution of Partial Differential Equations</title>
@@ -24,9 +24,9 @@ MathJax.Hub.Config({
 <div class="menu-category">Home</div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-category">Teaching</div>
-<div class="menu-item"><a href="pages/nspde.html">΢�ַ�����ֵ��</a></div>
-<div class="menu-item"><a href="pages/wjf.html">�ߵ���ѧB-΢����</a></div>
-<div class="menu-item"><a href="pages/gltj.html">������������ͳ��</a></div>
+<div class="menu-item"><a href="pages/nspde.html">微分方程数值解</a></div>
+<div class="menu-item"><a href="pages/wjf.html">高等数学B-微积分</a></div>
+<div class="menu-item"><a href="pages/gltj.html">概率论与数理统计</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
@@ -34,11 +34,11 @@ MathJax.Hub.Config({
 <div id="subtitle"></div>
 </div>
 <h2>ADI method</h2>
-<p>���淽����ʽ��ʽ��ÿһ�β�����Ҫ��\(x\)�����\(y\)�����Ϸֱ𲽽�һ��.
-���Ǽٶ�\(x\)�����ϵ���ʿ��ʽ��΢�־���ֱ���\(A_x\)��\(B_x\),
-\(y\)�����ϵ���ʿ��ʽ��΢�־���ֱ���\(A_y\)��\(B_y\).
-�ٶ�<tt>xx</tt>��<tt>yy</tt>������ڵ�, \(U(i,j)\)�Ƕ�Ӧ��<tt><a href="xx(i,j),yy(i,j)" target=&ldquo;blank&rdquo;>xx(i,j),yy(i,j)</a></tt>��ֵ(�������߽�),
-��
+<p>交替方向隐式格式的每一次步进需要在\(x\)方向和\(y\)方向上分别步进一次.
+我们假定\(x\)方向上的隐士格式的微分矩阵分别是\(A_x\)和\(B_x\),
+\(y\)方向上的隐士格式的微分矩阵分别是\(A_y\)和\(B_y\).
+假定<tt>xx</tt>和<tt>yy</tt>是网格节点, \(U(i,j)\)是对应于<tt><a href="xx(i,j),yy(i,j)" target=&ldquo;blank&rdquo;>xx(i,j),yy(i,j)</a></tt>的值(不包括边界),
+则
 </p>
 <div class="infoblock">
 <div class="blocktitle"></div>
@@ -52,7 +52,7 @@ MathJax.Hub.Config({
 (1+.5\mu_x\delta_x^2)U = (B_xU&rsquo;)&rsquo;
 \]
 </p></div></div>
-<p>Ϊ��˵��Ϊʲô\(x\)�����ϵ�΢���������þ����ʾ��ʱ����Ҫ����ת��, �������������һ�γ���</p>
+<p>为了说明为什么\(x\)方向上的微分算子在用矩阵表示的时候需要进行转置, 我们来看下面的一段程序</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 x = 0:0.2:1;
@@ -60,7 +60,7 @@ y = 0:0.2:1;
 [xx,yy] = meshgrid(x,y);
 </pre></div></div>
 <p>
-�������Ϊ</p>
+它的输出为</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 
@@ -84,11 +84,11 @@ yy =
     1.0000    1.0000    1.0000    1.0000    1.0000    1.0000
 </pre></div></div>
 <p>
-������\(U\)ÿ��λ�ö�Ӧ�ĺ���������������<tt>xx</tt>�Լ�<tt>yy</tt>��Ӧλ�õ�Ԫ��.
-���, ��\(y\)�����������, ֻ��Ҫʹ��\(B_yU\)����; ����\(x\)�����������, ��Ҫ����ת��.
+而矩阵\(U\)每个位置对应的横坐标和纵坐标就是<tt>xx</tt>以及<tt>yy</tt>对应位置的元素.
+因此, 在\(y\)方向上做差分, 只需要使用\(B_yU\)即可; 而在\(x\)方向上做差分, 需要进行转置.
 
 
-��󣬷���һ��M�͵�source�����Ĵ���</p>
+最后，放上一个M型的source函数的代码</p>
 <div class="codeblock">
 <div class="blockcontent"><pre>
 x1 = 0:0.01:1;
@@ -97,7 +97,7 @@ y1 = 0:0.01:1;
 load('M.mat')
 u0 = @(x,y) interp2(xx1,yy1,M,x,y);
 </pre></div></div>
-<p>����<tt>M.mat</tt>�ɲ̴���ṩ������<a href="../docs/nspde/M.mat.zip" target=&ldquo;blank&rdquo;>�������</a>
+<p>其中<tt>M.mat</tt>由蔡大亨提供，可以<a href="../docs/nspde/M.mat.zip" target=&ldquo;blank&rdquo;>点此下载</a>
 
 
 </p>
