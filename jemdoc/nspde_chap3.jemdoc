@@ -1,5 +1,6 @@
-# jemdoc: menu{menu_teach}{nspde_chap3.html}, notime
+# jemdoc: addcss{person.css}
 # jemdoc: nofooter
+# jemdoc: menu{menu_index}{nspde_chap3.html}
 = Numerical Solution of Partial Differential Equations
 
 == ADI method

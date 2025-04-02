@@ -1,5 +1,6 @@
-# jemdoc: menu{menu_teach}{nspde_chap2.html}, notime
+# jemdoc: addcss{person.css}
 # jemdoc: nofooter
+# jemdoc: menu{menu_teach}{nspde_chap2.html}
 = Numerical Solution of Partial Differential Equations
 
 {{<!-- <font size="50">       o(กษ_กษ)o</font><br/> -->}}

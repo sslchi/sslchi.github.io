@@ -14,7 +14,7 @@ update : $(PHDOCS)
 	@echo ' done.'
 
 ../pages/%.html : %.jemdoc menu_index menu_teach
-	python jemdoc.py -o $@ -c mysite.conf $<
+	python jemdoc_GBK.py -o $@ -c mysite.conf $<
 
 .PHONY : clean
 clean :

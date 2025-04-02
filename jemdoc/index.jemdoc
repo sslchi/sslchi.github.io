@@ -1,21 +1,23 @@
 # jemdoc: addcss{person.css}
 # jemdoc: nofooter
 # jemdoc: menu{menu_index}{index.html}
-#= Guanjie Wang (王官杰)
+= Guanjie Wang (王官杰)
 
-= 
-#~~~
-#{}{img_left}{docs/homepage/myphoto.jpeg}{Guanjie Wang}{160}{}{}
-[https://sslchi.github.io Guanjie Wang], Associate Professor\n\n
+~~~
+{}{img_left}{docs/homepage/myphoto.jpeg}{Guanjie Wang}{160}{}{}
+
+#[https://sslchi.github.io Guanjie Wang], Associate Professor\n\n
+Associate Professor\n\n
+
+[https://tsxy.lixin.edu.cn School of Statistics and Mathematics]\n
+[https://www.lixin.edu.cn  Shanghai Lixin University of Accounting and Finance]\n\n
+
 #Assistant Researcher\n
-[http://tsxy.lixin.edu.cn/ School of Statistics and Mathematics]\n
-[http://www.lixin.edu.cn/  Shanghai Lixin University of Accounting and Finance]\n\n
-
 #Room 1A-405, SIST Building\n
 #No.393, Huaxia middle Road\n
 #Pudong Area, Shanghai, 201210\n
 Email: +guanjie(at)lixin(dot)edu(dot)cn+
-#~~~
+~~~
 
 
 == Research
@@ -23,16 +25,22 @@ Email: +guanjie(at)lixin(dot)edu(dot)cn+
 - Numerical solution of PDEs
 
 == Education
-- Ph.D., Computational Mathematics, Department of Mathematics, [http://www.zju.edu.cn Zhejiang University],
+- Ph.D., Computational Mathematics, Department of Mathematics, [https://www.zju.edu.cn Zhejiang University],
   June 2015.
 
-- B.S. , Applied Mathematics, [http://www.qfnu.edu.cn/ Qufu Normal University], July 2010.\n\n
+- B.S. , Applied Mathematics, [https://www.qfnu.edu.cn Qufu Normal University], July 2010.\n\n
 
 
 [docs/homepage/mycv.pdf More about me]
 
 # 王军华副校长：15301890053
-== Publications and preprints
+== Publications and preprints 
+
+${^\#}$ Co-first Author, $^*$ Corresponding Author.
+
+
+. *G. Wang* and Q. Liao. [https://arxiv.org/abs/2410.22183 An alternating low-rank projection approach for partial differential equations with random inputs], preprint,  2024. \[[https://arxiv.org/abs/2410.22183 link], [https://arxiv.org/pdf/2410.22183 PDF]\]
+. M. Li ,  *G. Wang$^\#$* , X. Zhang, Q. Liao and C. Xiao, [https://openaccess.thecvf.com/content/WACV2025/html/Li_D-LUT_Photorealistic_Style_Transfer_via_Diffusion_Process_WACV_2025_paper.html D-LUT: Photorealistic Style Transfer via Diffusion Process], IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 9188-9196, 2025. \[[https://openaccess.thecvf.com/content/WACV2025/html/Li_D-LUT_Photorealistic_Style_Transfer_via_Diffusion_Process_WACV_2025_paper.html  link], [https://openaccess.thecvf.com/content/WACV2025/papers/Li_D-LUT_Photorealistic_Style_Transfer_via_Diffusion_Process_WACV_2025_paper.pdf PDF]\]
 
 . X. Shi, H. Zhang and *G. Wang$^*$*. [https://doi.org/10.3390/math12020301 ANOVA-GP modeling for high-dimensional Bayesian inverse problems], Mathematics, 12(2), 301, 2024. \[[https://doi.org/10.3390/math12020301  link], [https://www.mdpi.com/2227-7390/12/2/301/pdf?version=1705484336 PDF]\]
 
