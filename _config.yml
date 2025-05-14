@@ -8,10 +8,10 @@ markdown: kramdown
 show_downloads: true
 github:
   home_url: https://sslchi.github.io/
-  zip_url: https://sslchi.github.io/wjf
-  tar_url: https://sslchi.github.io/xxds
-  kysx_url: https://sslchi.github.io/kysx
-  repository_url: https://sslchi.github.io/gltj
+  zip_url: https://sslchi.github.io/wjf/
+  tar_url: https://sslchi.github.io/xxds/
+  kysx_url: https://sslchi.github.io/kysx/
+  repository_url: https://sslchi.github.io/gltj/
 
 
   
