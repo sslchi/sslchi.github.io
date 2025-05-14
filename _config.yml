@@ -1,1 +1,17 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-modernist
+title: MathICU
+description: > # this means to ignore newlines until "baseurl:"
+#Mathematical Intensive Care Unit.
+logo: pics/wx.jpg
+github: 'https://mathicu.github.io/index'
+markdown: kramdown
+show_downloads: true
+github:
+  home_url: https://mathicu.github.io/
+  zip_url: https://mathicu.github.io/wjf
+  tar_url: https://mathicu.github.io/xxds
+  kysx_url: https://mathicu.github.io/kysx
+  repository_url: https://mathicu.github.io/gltj
+
+
+  
