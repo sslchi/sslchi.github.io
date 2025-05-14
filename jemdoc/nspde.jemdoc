@@ -1,5 +1,6 @@
-#### jemdoc: menu{menu_teach}{nspde.html}, notime
+# jemdoc: addcss{person.css}
 # jemdoc: nofooter
+# jemdoc: menu{menu_teach}{nspde.html}
 = Numerical Solution of Partial Differential Equations
 
 == 作业要求

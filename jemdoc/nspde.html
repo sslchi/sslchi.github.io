@@ -1,169 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Numerical Solution of Partial Differential Equations</title>
-<!-- MathJax -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-<!-- End MathJax -->
-</head>
-<body>
-<div id="layout-content">
-<div id="toptitle">
-<h1>Numerical Solution of Partial Differential Equations</h1>
-<div id="subtitle"></div>
-</div>
-<h2>作业要求</h2>
-<ol>
-<li><p>不接受deadline之后提交的作业.</p>
-</li>
-<li><p>所有的程序作业应当放在名为<tt>nspde_yourID</tt>的文件夹下，并压缩成一个文件提交.</p>
-</li>
-<li><p>每次程序作业提供一个driver运行所有的程序, 生成所有的图片.</p>
-</li>
-<li><p>除driver外，所有的程序放到<tt>private</tt>文件夹下.</p>
-</li>
-<li><p>driver请命名为：<tt>homework1_dirver_yourID.m</tt>， <tt>homework2_dirver_yourID.m</tt> &hellip;.</p>
-</li>
-<li><p>图片命名为<tt>figx_x</tt>, 如Fig 2.2 命名为<tt>fig2_2</tt>.</p>
-</li>
-<li><p>所有的图片请保存在<tt>nspde_yourID</tt>的<tt>figure</tt>文件夹下.</p>
-</li>
-<li><p>程序作业的文件结构请参考下面的示例.
-</p>
-</li>
-</ol>
-<div class="codeblock">
-<div class="blocktitle">文件结构示例</div>
-<div class="blockcontent"><pre>
-|
-| --- nspde_yourID
-|      |___________ figure
-|      |             |____________ fig2_2.fig
-|      |             |____________ fig2_2.eps
-|      |             .
-|      |             .
-|      |
-|      |___________ private
-|      |             |_____________ xx.m
-|      |             |_____________ xxx.m
-|      |             .
-|      |             .
-|      |
-|      |___________ homework1_dirver_yourID.m
-|      |___________ homework2_driver_yourID.m
-|      .
-.      .
-.
-.
-</pre></div></div>
-<p></p>
-<h2>代码书写规范</h2>
-<ol>
-<li><p>注释应当使用英文.</p>
-</li>
-<li><p>函数名和文件名必须相同.</p>
-</li>
-<li><p>控制、循环语句应当使用缩进.</p>
-</li>
-<li><p>尽量将代码内容控制在前80列之内.</p>
-</li>
-<li><p>通常情况下，一行代码应当只包含一个可执行语句.</p>
-</li>
-<li><p>二元运算符，如 <tt>==</tt>， <tt>～=</tt>， <tt>&amp;&amp;</tt>， <tt>||</tt>， 前后应该加一个空格.
-
-更多的规范，请参考 <a href="https://github.com/chebfun/chebfun/wiki/Coding-style-conventions/" target=&ldquo;blank&rdquo;>Chebfun coding style conventions</a>.
-
-</p>
-</li>
-</ol>
-<div class="codeblock">
-<div class="blocktitle">程序示例</div>
-<div class="blockcontent"><pre>
-function [x,w,v] = chebpts(n, varargin)
-%CHEBPTS Compute the second kind chebyshev points.
-%   [X,W,V] = CHEBPTS(N) retuns N Chebyshev points of the second kind in [-1, 1].
-%   X is the second kind Chebshev points, W is the weights of Clenshaw-Curtis
-%   quadrature, and V is the barycentric weights corresponding to the  Chebyshev
-%   points X.
-%
-%   [X,W,V] = CHEBPTS(N,[a,b]) retuns N Chebyshev points of the second kind in
-%   [a, b].
-%
-% Example:
-%
-%   [x, w] = chebpts(10, [-2,2]);
-%   w*x.^2  % quadrature of x^2 in [-2,2]
-%
-% This programe is adapted from Chebfun/chebtech2.chebpts, http://www.chebfun.org/
-
-
-if n == 1
-    x = 0;
-    w = 2;
-    v = 1;
-else
-    % Chebyshev points:
-    m = n - 1;
-    x = sin(pi*(-m:2:m)/(2*m)).';  % (Use of sine enforces symmetry.)
-
-    % quadratrue weights
-    c = 2./[1, 1-(2:2:(m)).^2];    % Exact integrals of T_k (even)
-    c = [c, c(floor(n/2):-1:2)];   % Mirror for DCT via FFT
-    w = ifft(c);                   % Interior weights
-    w([1,n]) = w(1)/2;             % Boundary weights
-
-    % barycentric interpolate weights
-    v = [0.5;ones(n-1,1)];        % Note v(1) is positive.
-    v(2:2:end) = -1;
-    v(end) = .5*v(end);
-end
-
-if nargin == 2
-    [x, w] =  rescale(x, w, varargin{1});
-end
-
-end
-
-
-function [x, w] = rescale(x, w, dom)
-%RESCALE   Rescale the quadrature points and weights.
-
-a = dom(1);
-b = dom(2);
-
-w = .5*w*(b-a);
-x = .5*(a+b) + .5*(b-a).*x;
-
-
-end
-</pre></div></div>
-<p></p>
-<h2>作业提示</h2>
-<p></p>
-<ul>
-<li><p>第2章作业提示请<a href="nspde_chap2.html" target=&ldquo;blank&rdquo;><b>点击这里</b></a>查看；</p>
-</li>
-<li><p>第3章作业提示请<a href="nspde_chap3.html" target=&ldquo;blank&rdquo;><b>点击这里</b></a>查看.
-
-
-</p>
-</li>
-</ul>
-<div id="footer">
-<div id="footer-text">
-Copyright &copy; <a href="https://sslchi.github.io" target="blank">Guanjie</a>
-</div>
-</div>
-</div>
-</body>
-</html>
