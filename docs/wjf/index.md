@@ -14,58 +14,58 @@
     <caption ></caption>
     <tr>
 	    <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap1.pdf'>第1章</a>
+		 <a href='./print_chap1.pdf'>第1章</a>
 		</td>
 		<td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap2.pdf'>第2章</a>
+		 <a href='./print_chap2.pdf'>第2章</a>
 		</td>
         <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap3.pdf'>第3章</a>
+		 <a href='./print_chap3.pdf'>第3章</a>
 		</td>
         <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap4.pdf'>第4章</a>
+		 <a href='./print_chap4.pdf'>第4章</a>
 		</td>
 	  </tr>
 	  <tr>
 	     <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap5.pdf'>第5章</a>
+		 <a href='./print_chap5.pdf'>第5章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_fx1.pdf'>复习I</a>
+		 <a href='./print_fx1.pdf'>复习I</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap6.pdf'>第6章</a>
+		 <a href='./print_chap6.pdf'>第6章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_cahp7.pdf'>第7章</a>
+		 <a href='./print_cahp7.pdf'>第7章</a>
 		</td>
 	  </tr>
     <tr>
 	     <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap8.pdf'>第8章</a>
+		 <a href='./print_chap8.pdf'>第8章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap9.pdf'>第9章</a>
+		 <a href='./print_chap9.pdf'>第9章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap10.pdf'>第10章</a>
+		 <a href='./print_chap10.pdf'>第10章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap11.pdf'>第11章</a>
+		 <a href='./print_chap11.pdf'>第11章</a>
 		</td>
 	  </tr>
     <tr>
 	     <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_fx2.pdf'>复习II</a>
+		 <a href='./print_fx2.pdf'>复习II</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_fx1.pdf'></a>
+		 <a href='./print_fx1.pdf'></a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_chap6.pdf'></a>
+		 <a href='./print_chap6.pdf'></a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/print_cahp7.pdf'></a>
+		 <a href='./print_cahp7.pdf'></a>
 		</td>
 	  </tr>
    </table>
@@ -76,44 +76,44 @@
     <caption ></caption>
     <tr>
 	    <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap1.pdf'>第1章</a>
+		 <a href='./xsim_chap1.pdf'>第1章</a>
 		</td>
 		<td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap2.pdf'>第2章</a>
+		 <a href='./xsim_chap2.pdf'>第2章</a>
 		</td>
         <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap3.pdf'>第3章</a>
+		 <a href='./xsim_chap3.pdf'>第3章</a>
 		</td>
         <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap4.pdf'>第4章</a>
+		 <a href='./xsim_chap4.pdf'>第4章</a>
 		</td>
 	  </tr>
 	  <tr>
 	     <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap5.pdf'>第5章</a>
+		 <a href='./xsim_chap5.pdf'>第5章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap6.pdf'>第6章</a>
+		 <a href='./xsim_chap6.pdf'>第6章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap7.pdf'>第7章</a>
+		 <a href='./xsim_chap7.pdf'>第7章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap8.pdf'>第8章</a>
+		 <a href='./xsim_chap8.pdf'>第8章</a>
 		</td>
 	  </tr>
     <tr>
 	     <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap9.pdf'>第9章</a>
+		 <a href='./xsim_chap9.pdf'>第9章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap10.pdf'>第10章</a>
+		 <a href='./xsim_chap10.pdf'>第10章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap11.pdf'>第11章</a>
+		 <a href='./xsim_chap11.pdf'>第11章</a>
 		</td>
           <td bgcolor="#FFFFFF">
-		 <a href='./docs/xsim_chap8.pdf'></a>
+		 <a href='./xsim_chap8.pdf'></a>
 		</td>
 	  </tr>
    </table>
