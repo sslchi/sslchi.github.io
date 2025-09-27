@@ -1,1 +1,17 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-modernist
+title: MathICU
+description: > # this means to ignore newlines until "baseurl:"
+#Mathematical Intensive Care Unit.
+logo: pics/wx.jpg
+github: 'https://sslchi.github.io/index'
+markdown: kramdown
+show_downloads: true
+github:
+  home_url: https://sslchi.github.io/
+  zip_url: https://sslchi.github.io/docs/wjf/
+  tar_url: https://sslchi.github.io/docs/xxds/
+  kysx_url: https://sslchi.github.io/docs/kysx/
+  repository_url: https://sslchi.github.io/docs/gltj/
+
+
+  
