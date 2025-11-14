@@ -3,8 +3,11 @@
 # jemdoc: menu{menu_index}{index.html}
 = Guanjie Wang (Íõ¹Ù½Ü)
 
+
+
 ~~~
-{}{img_left}{docs/homepage/myphoto.jpeg}{Guanjie Wang}{160}{}{}
+{}{img_left}{docs/homepage/myphoto.jpeg}{}{0}{}{}
+#{}{img_left}{docs/homepage/myphoto.jpeg}{Guanjie Wang}{160}{}{}
 
 #[https://sslchi.github.io Guanjie Wang], Associate Professor\n\n
 Associate Professor\n\n
